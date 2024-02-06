@@ -566,7 +566,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 4
   m_Material: {fileID: 6200000, guid: 9cc6ed627eca4496096b285288d1810e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -706,6 +706,10 @@ MonoBehaviour:
   speedMultiplier: 8
   airMultiplier: 6
   jumpSpeedMultiplier: 12
+  gravMultiplier: 4
+  lowGravMultiplier: 2
+  jumpBuffer: 0.15
+  coyoteTime: 0.05
   conserveMomentum: 1
   jumpableGround:
     serializedVersion: 2

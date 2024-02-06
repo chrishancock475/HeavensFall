@@ -9,7 +9,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speedMultiplier;
     [SerializeField] private float airMultiplier;
     [SerializeField] private float jumpSpeedMultiplier;
+    [SerializeField] private float gravMultiplier;
+    [SerializeField] private float lowGravMultiplier;
+    [SerializeField] private float jumpBuffer;
+    [SerializeField] private float coyoteTime;
     [SerializeField] private bool conserveMomentum;
+
+    private float jumpDelay;
+    private float groundTime;
 
     private Rigidbody2D body;
     private BoxCollider2D coll;
@@ -31,6 +38,13 @@ public class PlayerMovement : MonoBehaviour
         #region INPUT HANDLER
         _moveInput.x = Input.GetAxisRaw("Horizontal");
         #endregion
+        jumpDelay -= Time.deltaTime;
+        groundTime -= Time.deltaTime;
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpDelay = jumpBuffer;
+        }
+
         /*
         Vector2 Speed = new Vector2(body.velocity.x, body.velocity.y);
 
@@ -56,18 +70,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Run()
     {
-
         float targetSpeed = _moveInput.x * maxSpeed;
 
-
-        
         #region Calculate AccelRate
         float accelRate;
-        
+
         //Gets an acceleration value based on if we are accelerating (includes turning) 
         //or trying to decelerate (stop). As well as applying a multiplier if we're air borne.
         if (IsGrounded())
+        {
             accelRate = speedMultiplier;
+            groundTime = coyoteTime;
+        }
         else
             accelRate = airMultiplier;
         #endregion
@@ -81,8 +95,6 @@ public class PlayerMovement : MonoBehaviour
             accelRate = 0;
         }
         #endregion
-        
-
 
         //Calculate difference between current velocity and desired velocity
         float speedDif = targetSpeed - body.velocity.x;
@@ -92,9 +104,18 @@ public class PlayerMovement : MonoBehaviour
 
         //Convert this to a vector and apply to rigidbody
         body.AddForce(movement * Vector2.right, ForceMode2D.Force);
-        if (Input.GetButton("Jump") && IsGrounded())
+        
+        if (groundTime>0 && jumpDelay>0 && body.velocity.y <= 0)
         {
-            body.velocity = new Vector2(body.velocity.x,jumpSpeedMultiplier);
+            body.velocity = new Vector2(body.velocity.x, jumpSpeedMultiplier);
+            jumpDelay = 0;
+        }
+        if (Input.GetButton("Jump"))
+        {
+            body.gravityScale = lowGravMultiplier;
+        } else
+        {
+            body.gravityScale = gravMultiplier;
         }
     }
 
