@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpBuffer;
     [SerializeField] private float coyoteTime;
     [SerializeField] private bool conserveMomentum;
+    [SerializeField] private float downJumpReduction;
 
     [Header("Dynamic")] // For ease of testing and debugging
     [SerializeField] private float jumpDelay;
@@ -23,28 +24,25 @@ public class PlayerMovement : MonoBehaviour
     {
         get 
         {
+            int a = 0;
             if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround))
             {
-                return 0;
+                a+=1;
             }
-            else if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, jumpableGround))
             {
-                return 3;
+                a+=8;
             }
-            else if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, jumpableGround))
             {
-                return 1;
+                a+=2;
             }
-            else if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .1f, jumpableGround))
             {
-                return 2;
+                a+=4;
             }
-            else
-            {
-                return 0;
-            }
-
-
+            return a;
+            
         }
     } // Zero is default (down), 1 is left, 2 is up, 3 is right
 
@@ -106,94 +104,101 @@ public class PlayerMovement : MonoBehaviour
 
     private void Run()
     {
-        float targetSpeed;
-        if (magSwitch == 0 || magSwitch == 2)
-        {
-            targetSpeed = _moveInput.x * maxSpeed;
-        }
-        else
-        {
-            targetSpeed = _moveInput.y * maxSpeed;
-        }
+        float targetSpeedX;
+        float targetSpeedY;
+        //if (magSwitch == 0 || magSwitch%2 == 1 || magSwitch%8 == 4)
+        //{
+            targetSpeedX = _moveInput.x * maxSpeed;
+        //}
+        
+            targetSpeedY = _moveInput.y * maxSpeed;
+        
 
 
         #region Calculate AccelRate
-        float accelRate;
+        float accelRateX;
+        float accelRateY;
 
         //Gets an acceleration value based on if we are accelerating (includes turning) 
         //or trying to decelerate (stop). As well as applying a multiplier if we're air borne.
         if (isGrounded)
         {
-            accelRate = speedMultiplier;
+            accelRateX = speedMultiplier;
+            accelRateY = speedMultiplier;
             groundTime = coyoteTime;
         }
         else
-            accelRate = airMultiplier;
+        {
+            accelRateX = airMultiplier;
+            accelRateY = airMultiplier;
+        }
         #endregion
-        
+
         #region Conserve Momentum
         //We won't slow the player down if they are moving in their desired direction but at a greater speed than their maxSpeed
-        if (conserveMomentum && Mathf.Abs(body.velocity.x) > Mathf.Abs(targetSpeed) && Mathf.Sign(body.velocity.x) == Mathf.Sign(targetSpeed) && Mathf.Abs(targetSpeed) > 0.01f && !isGrounded)
+        if (conserveMomentum && Mathf.Abs(body.velocity.x) > Mathf.Abs(targetSpeedX) && Mathf.Sign(body.velocity.x) == Mathf.Sign(targetSpeedX) && Mathf.Abs(targetSpeedX) > 0.01f && !isGrounded)
         {
             //Prevent any deceleration from happening, or in other words conserve are current momentum
             //You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
-            accelRate = 0;
+            accelRateX = 0;
+        }
+        if (conserveMomentum && Mathf.Abs(body.velocity.y) > Mathf.Abs(targetSpeedY) && Mathf.Sign(body.velocity.y) == Mathf.Sign(targetSpeedY) && Mathf.Abs(targetSpeedY) > 0.01f && !isGrounded)
+        {
+            //Prevent any deceleration from happening, or in other words conserve are current momentum
+            //You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
+            accelRateY = 0;
         }
         #endregion
 
         //Calculate difference between current velocity and desired velocity
-        float speedDif;
-        if (magSwitch == 0 || magSwitch == 2)
-        {
-            speedDif = targetSpeed - body.velocity.x;
-        }
-        else
-        {
-            speedDif = targetSpeed - body.velocity.y;
-        }
+        float speedDifX;
+        float speedDifY;
+        speedDifX = targetSpeedX - body.velocity.x;
+        speedDifY = targetSpeedY - body.velocity.y;
         //Calculate force along x-axis to apply to thr player
 
-        float movement = speedDif*accelRate;
+        float movementX = speedDifX * accelRateX;
+        float movementY = speedDifY * accelRateY;
 
         //Convert this to a vector and apply to rigidbody
-        
-        if (magSwitch == 0 || magSwitch == 2)
+
+        //if (magSwitch%2==0 || magSwitch == 2)
+        //{
+        body.AddForce(movementX * Vector2.right, ForceMode2D.Force);
+        //}
+        if (magSwitch%4>=2||magSwitch%16>=8)
         {
-            body.AddForce(movement * Vector2.right, ForceMode2D.Force);
+            body.AddForce(movementY * Vector2.up, ForceMode2D.Force);
         }
-        else
+        if (magSwitch%8>=4)
         {
-            body.AddForce(movement * Vector2.up, ForceMode2D.Force);
+            body.AddForce(movementY * downJumpReduction * Vector2.up, ForceMode2D.Force);
         }
 
-        if (magSwitch == 0 && groundTime>0 && jumpDelay>0 && body.velocity.y <= 0)
+        if (magSwitch%2 >= 1 && groundTime>0 && jumpDelay>0 && body.velocity.y <= 0.1f)
         {
-            body.velocity = new Vector2(body.velocity.x, jumpSpeedMultiplier);
-            jumpDelay = 0;
+            body.velocity = new Vector2(body.velocity.x, body.velocity.y+jumpSpeedMultiplier);
+            jumpDelay = 0.001f;
         }
-        else if (magSwitch == 1 && groundTime>0 && jumpDelay>0 && body.velocity.x <= 0)
+        if (magSwitch%4 >= 2 && groundTime>0 && jumpDelay>0 && body.velocity.x <= 0.1f)
         {
-            body.velocity = new Vector2(jumpSpeedMultiplier, body.velocity.y);
-            jumpDelay = 0;
+            body.velocity = new Vector2(body.velocity.x+jumpSpeedMultiplier, body.velocity.y);
+            jumpDelay = 0.001f;
         }
-        else if (magSwitch == 2 && groundTime>0 && jumpDelay>0 && body.velocity.y >= 0)
+        if (magSwitch%8 >= 4 && groundTime>0 && jumpDelay>0 && body.velocity.y >= -0.1f)
         {
-            body.velocity = new Vector2(body.velocity.x, -jumpSpeedMultiplier);
-            jumpDelay = 0;
+            body.velocity = new Vector2(body.velocity.x, body.velocity.y-jumpSpeedMultiplier*downJumpReduction);
+            jumpDelay = 0.001f;
         }
-        else if (magSwitch == 3 && groundTime>0 && jumpDelay>0 && body.velocity.x >= 0)
+        if (magSwitch%16 >= 8 && groundTime>0 && jumpDelay>0 && body.velocity.x >= -0.1f)
         {
-            body.velocity = new Vector2(-jumpSpeedMultiplier, body.velocity.y);
-            jumpDelay = 0;
+            body.velocity = new Vector2(body.velocity.x-jumpSpeedMultiplier, body.velocity.y);
+            jumpDelay = 0.001f;
         }
-
         if (Input.GetButton("Jump") && magSwitch == 0)
         {
             body.gravityScale = lowGravMultiplier;
-        } //else
-        //{
-       //     body.gravityScale = gravMultiplier;
-        //}
+        }
     }
 
 }

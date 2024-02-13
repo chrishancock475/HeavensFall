@@ -711,10 +711,10 @@ MonoBehaviour:
   jumpBuffer: 0.15
   coyoteTime: 0.05
   conserveMomentum: 1
+  downJumpReduction: 0.5
   jumpDelay: 0
   groundTime: 0
-  magSwitch: 0
-  gravityScale: 0
+  isGrounded: 0
   jumpableGround:
     serializedVersion: 2
     m_Bits: 128
