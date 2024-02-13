@@ -18,20 +18,31 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dynamic")] // For ease of testing and debugging
     [SerializeField] private float jumpDelay;
     [SerializeField] private float groundTime;
-    [SerializeField] private int magSwitch = 0; // Zero is default (down), 1 is left, 2 is up, 3 is right
-
-    // We need to simulate our own gravity to change its direction
-    public Vector2 gravityDirection 
+    [SerializeField] private bool isGrounded;
+    public int magSwitch 
     {
         get 
         {
-            if (magSwitch == 0) return new Vector2(0, -1);
-            else if (magSwitch == 1) return new Vector2(-1, 0);
-            else if (magSwitch == 2) return new Vector2(0, 1);
-            else return new Vector2(1, 0);
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, jumpableGround))
+            {
+                return 3;
+            }
+            else if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, jumpableGround))
+            {
+                return 1;
+            }
+            else if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .1f, jumpableGround))
+            {
+                return 2;
+            }
+            else
+            {
+                return 0;
+            }
+
+
         }
-    }
-    [SerializeField] private float gravityScale;
+    } // Zero is default (down), 1 is left, 2 is up, 3 is right
 
     private Rigidbody2D body;
     private BoxCollider2D coll;
@@ -46,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
-        body.gravityScale = 0;
     }
 
     private void Update()
@@ -62,39 +72,33 @@ public class PlayerMovement : MonoBehaviour
             jumpDelay = jumpBuffer;
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1)) // This way of handling mag switch input is most likely temporary
-        {
-            magSwitch = 0;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            magSwitch = 1;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            magSwitch = 2;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            magSwitch = 3;
-        }
-
+        if (magSwitch != 0) body.gravityScale = 0;
+        else body.gravityScale = gravMultiplier;
 
     }
 
     private void FixedUpdate()
     {
         Run();
-        body.AddForce(gravityDirection * Physics2D.gravity.magnitude * gravityScale, ForceMode2D.Force);
     }
 
-    private bool IsGrounded()
+
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (magSwitch == 0) return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
-        else if (magSwitch == 1) return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, jumpableGround);
-        else if (magSwitch == 2) return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .1f, jumpableGround);
-        else return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, jumpableGround);
-    } // Returns a physics2d boxcast searching for jumpable ground in the direction of gravity
+        if (collision.gameObject.layer == 7)
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            isGrounded = false;
+        }
+    }
 
     private void Run()
     {
@@ -114,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Gets an acceleration value based on if we are accelerating (includes turning) 
         //or trying to decelerate (stop). As well as applying a multiplier if we're air borne.
-        if (IsGrounded())
+        if (isGrounded)
         {
             accelRate = speedMultiplier;
             groundTime = coyoteTime;
@@ -125,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         
         #region Conserve Momentum
         //We won't slow the player down if they are moving in their desired direction but at a greater speed than their maxSpeed
-        if (conserveMomentum && Mathf.Abs(body.velocity.x) > Mathf.Abs(targetSpeed) && Mathf.Sign(body.velocity.x) == Mathf.Sign(targetSpeed) && Mathf.Abs(targetSpeed) > 0.01f && !IsGrounded())
+        if (conserveMomentum && Mathf.Abs(body.velocity.x) > Mathf.Abs(targetSpeed) && Mathf.Sign(body.velocity.x) == Mathf.Sign(targetSpeed) && Mathf.Abs(targetSpeed) > 0.01f && !isGrounded)
         {
             //Prevent any deceleration from happening, or in other words conserve are current momentum
             //You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
@@ -179,13 +183,13 @@ public class PlayerMovement : MonoBehaviour
             jumpDelay = 0;
         }
 
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && magSwitch == 0)
         {
-            gravityScale = lowGravMultiplier;
-        } else
-        {
-            gravityScale = gravMultiplier;
-        }
+            body.gravityScale = lowGravMultiplier;
+        } //else
+        //{
+       //     body.gravityScale = gravMultiplier;
+        //}
     }
 
 }
