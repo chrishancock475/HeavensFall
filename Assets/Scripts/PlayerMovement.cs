@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpDelay;
     [SerializeField] private float groundTime;
     [SerializeField] private bool isGrounded;
+    public int surface;
     public int MagSwitch 
     {
         get 
@@ -41,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
             if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .05f, jumpableGround))
             {
                 a+=4;
+            }
+            if (a!=0)
+            {
+                surface = a;
             }
             return a;
             
@@ -177,22 +182,22 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(movementY * downJumpReduction * Vector2.up, ForceMode2D.Force);
         }
 
-        if ((MagSwitch==0||MagSwitch%2 >= 1) && groundTime>0 && jumpDelay>0 && body.velocity.y <= 0.1f)
+        if (surface%2 >= 1 && groundTime>0 && jumpDelay>0 && body.velocity.y <= 0.1f)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y+jumpSpeedMultiplier);
             jumpDelay = 0.001f;
         }
-        if (MagSwitch%4 >= 2 && groundTime>0 && jumpDelay>0 && body.velocity.x <= 0.1f)
+        if (surface%4 >= 2 && groundTime>0 && jumpDelay>0 && body.velocity.x <= 0.1f)
         {
             body.velocity = new Vector2(body.velocity.x+jumpSpeedMultiplier, Mathf.Max(body.velocity.y,wallJumpSpeed));
             jumpDelay = 0.001f;
         }
-        if (MagSwitch%8 >= 4 && groundTime>0 && jumpDelay>0 && body.velocity.y >= -0.1f)
+        if (surface%8 >= 4 && groundTime>0 && jumpDelay>0 && body.velocity.y >= -0.1f)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y-jumpSpeedMultiplier*downJumpReduction);
             jumpDelay = 0.001f;
         }
-        if (MagSwitch%16 >= 8 && groundTime>0 && jumpDelay>0 && body.velocity.x >= -0.1f)
+        if (surface%16 >= 8 && groundTime>0 && jumpDelay>0 && body.velocity.x >= -0.1f)
         {
             body.velocity = new Vector2(body.velocity.x-jumpSpeedMultiplier, Mathf.Max(body.velocity.y,wallJumpSpeed));
             jumpDelay = 0.001f;
