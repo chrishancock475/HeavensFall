@@ -15,31 +15,37 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float coyoteTime;
     [SerializeField] private bool conserveMomentum;
     [SerializeField] private float downJumpReduction;
+    [SerializeField] private float wallJumpSpeed;
 
     [Header("Dynamic")] // For ease of testing and debugging
     [SerializeField] private float jumpDelay;
     [SerializeField] private float groundTime;
     [SerializeField] private bool isGrounded;
-    public int magSwitch 
+    public int surface;
+    public int MagSwitch 
     {
         get 
         {
             int a = 0;
-            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .05f, jumpableGround))
             {
                 a+=1;
             }
-            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .05f, jumpableGround))
             {
                 a+=8;
             }
-            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .05f, jumpableGround))
             {
                 a+=2;
             }
-            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .1f, jumpableGround))
+            if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.up, .05f, jumpableGround))
             {
                 a+=4;
+            }
+            if (a!=0)
+            {
+                surface = a;
             }
             return a;
             
@@ -74,8 +80,7 @@ public class PlayerMovement : MonoBehaviour
             jumpDelay = jumpBuffer;
         }
 
-        if (magSwitch != 0) body.gravityScale = 0;
-        else body.gravityScale = gravMultiplier;
+        
 
     }
 
@@ -112,8 +117,10 @@ public class PlayerMovement : MonoBehaviour
         //}
         
             targetSpeedY = _moveInput.y * maxSpeed;
-        
 
+        //Disable Gravity
+        if (MagSwitch != 0 || isGrounded) body.gravityScale = 0;
+        else body.gravityScale = gravMultiplier;
 
         #region Calculate AccelRate
         float accelRateX;
@@ -166,36 +173,37 @@ public class PlayerMovement : MonoBehaviour
         //{
         body.AddForce(movementX * Vector2.right, ForceMode2D.Force);
         //}
-        if (magSwitch%4>=2||magSwitch%16>=8)
+        if (MagSwitch%4>=2||MagSwitch%16>=8)
         {
             body.AddForce(movementY * Vector2.up, ForceMode2D.Force);
         }
-        if (magSwitch%8>=4)
+        if (MagSwitch%8>=4)
         {
             body.AddForce(movementY * downJumpReduction * Vector2.up, ForceMode2D.Force);
         }
 
-        if (magSwitch%2 >= 1 && groundTime>0 && jumpDelay>0 && body.velocity.y <= 0.1f)
+        if (surface%2 >= 1 && groundTime>0 && jumpDelay>0 && body.velocity.y <= 0.1f)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y+jumpSpeedMultiplier);
             jumpDelay = 0.001f;
         }
-        if (magSwitch%4 >= 2 && groundTime>0 && jumpDelay>0 && body.velocity.x <= 0.1f)
+        if (surface%4 >= 2 && groundTime>0 && jumpDelay>0 && body.velocity.x <= 0.1f)
         {
-            body.velocity = new Vector2(body.velocity.x+jumpSpeedMultiplier, body.velocity.y);
+            body.velocity = new Vector2(body.velocity.x+jumpSpeedMultiplier, Mathf.Max(body.velocity.y,wallJumpSpeed));
             jumpDelay = 0.001f;
         }
-        if (magSwitch%8 >= 4 && groundTime>0 && jumpDelay>0 && body.velocity.y >= -0.1f)
+        if (surface%8 >= 4 && groundTime>0 && jumpDelay>0 && body.velocity.y >= -0.1f)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y-jumpSpeedMultiplier*downJumpReduction);
             jumpDelay = 0.001f;
         }
-        if (magSwitch%16 >= 8 && groundTime>0 && jumpDelay>0 && body.velocity.x >= -0.1f)
+        if (surface%16 >= 8 && groundTime>0 && jumpDelay>0 && body.velocity.x >= -0.1f)
         {
-            body.velocity = new Vector2(body.velocity.x-jumpSpeedMultiplier, body.velocity.y);
+            body.velocity = new Vector2(body.velocity.x-jumpSpeedMultiplier, Mathf.Max(body.velocity.y,wallJumpSpeed));
             jumpDelay = 0.001f;
         }
-        if (Input.GetButton("Jump") && magSwitch == 0)
+
+        if (Input.GetButton("Jump") && MagSwitch == 0)
         {
             body.gravityScale = lowGravMultiplier;
         }
