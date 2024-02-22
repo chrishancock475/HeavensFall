@@ -1,14 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 
 public class EndLevel : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer==8)
-        SceneManager.LoadScene("Main_menu");
+        if (collision.gameObject.layer == 8)
+        GameManager.OnLevelEnd?.Invoke(this, new EventArgs());
     }
 }

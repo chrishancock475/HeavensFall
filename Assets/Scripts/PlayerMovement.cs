@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -27,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     public int surface;
     private float activeRotation;
     private int currentDirection;
+
+    
     public int MagSwitch
     {
         get
@@ -274,6 +277,12 @@ public class PlayerMovement : MonoBehaviour
                 currentDirection = 1;
         }
         sprite.transform.localScale = new Vector3(currentDirection, 1, 1);
+    }
+
+    public void Die()
+    {
+        body.velocity = Vector3.zero;
+        transform.position = GameManager.checkpoint.position;
     }
 
 }
