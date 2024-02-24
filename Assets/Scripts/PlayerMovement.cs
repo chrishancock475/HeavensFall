@@ -209,24 +209,24 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(movementY * downJumpReduction * Vector2.up, ForceMode2D.Force);
         }
 
+        if (surface % 4 >= 2 && groundTime > 0 && jumpDelay > 0)
+        {
+            body.velocity = new Vector2(jumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
+            jumpDelay = 0.001f;
+        }
+        if (surface % 16 >= 8 && groundTime > 0 && jumpDelay > 0)
+        {
+            body.velocity = new Vector2(-jumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
+            jumpDelay = 0.001f;
+        }
         if (surface % 2 >= 1 && groundTime > 0 && jumpDelay > 0 && body.velocity.y <= 0.1f)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y + jumpSpeedMultiplier);
             jumpDelay = 0.001f;
         }
-        if (surface % 4 >= 2 && groundTime > 0 && jumpDelay > 0)
-        {
-            body.velocity = new Vector2(body.velocity.x + jumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
-            jumpDelay = 0.001f;
-        }
         if (surface % 8 >= 4 && groundTime > 0 && jumpDelay > 0)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y - jumpSpeedMultiplier * downJumpReduction);
-            jumpDelay = 0.001f;
-        }
-        if (surface % 16 >= 8 && groundTime > 0 && jumpDelay > 0)
-        {
-            body.velocity = new Vector2(body.velocity.x - jumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
             jumpDelay = 0.001f;
         }
 
