@@ -6,10 +6,13 @@ public class KillPlayer : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerMovement player = collision.GetComponent<PlayerMovement>();
-        if (player != null)
+        if (collision.gameObject.layer == 9)
         {
-            player.Die();
+            PlayerMovement player = collision.GetComponentInParent<PlayerMovement>();
+            if (player != null)
+            {
+                player.Die();
+            }
         }
     }
 }
