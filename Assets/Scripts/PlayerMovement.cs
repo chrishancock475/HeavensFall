@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxSpeed;
     //[SerializeField] private float maxJumpSpeed;
     [SerializeField] private float speedMultiplier;
+    [SerializeField] private float decelMultiplier;
     [SerializeField] private float airMultiplier;
     [SerializeField] private float jumpSpeedMultiplier;
     [SerializeField] private float gravMultiplier;
@@ -150,6 +151,8 @@ public class PlayerMovement : MonoBehaviour
         if (MagSwitch != 0 || isGrounded) body.gravityScale = 0;
         else body.gravityScale = gravMultiplier;
 
+
+        //https://github.com/DawnosaurDev/platformer-movement/blob/main/Scripts/Run%20Only/PlayerRun.cs
         #region Calculate AccelRate
         float accelRateX;
         float accelRateY;
@@ -158,14 +161,14 @@ public class PlayerMovement : MonoBehaviour
         //or trying to decelerate (stop). As well as applying a multiplier if we're air borne.
         if (isGrounded)
         {
-            accelRateX = speedMultiplier;
-            accelRateY = speedMultiplier;
+            accelRateX = (Mathf.Abs(targetSpeedX) > 0.01f) ? speedMultiplier : decelMultiplier;
+            accelRateY = (Mathf.Abs(targetSpeedY) > 0.01f) ? speedMultiplier : decelMultiplier;
             groundTime = coyoteTime;
         }
         else
         {
-            accelRateX = airMultiplier;
-            accelRateY = airMultiplier;
+            accelRateX = (Mathf.Abs(targetSpeedX) > 0.01f) ? airMultiplier*speedMultiplier : airMultiplier*decelMultiplier;
+            accelRateY = (Mathf.Abs(targetSpeedY) > 0.01f) ? airMultiplier*speedMultiplier : airMultiplier*decelMultiplier;
         }
         #endregion
 
