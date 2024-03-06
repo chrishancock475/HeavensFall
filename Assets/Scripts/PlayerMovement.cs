@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float rotationSpeed;
 
     [SerializeField] private GameObject sprite;
+    public Animator animator;
 
     [Header("Dynamic")] // For ease of testing and debugging
     [SerializeField] private float jumpDelay;
@@ -276,7 +277,10 @@ public class PlayerMovement : MonoBehaviour
             else if (currentDirection == -1 && _moveInput.y > 0)
                 currentDirection = 1;
         }
+        //sprite.transform.rotation = Quaternion.Euler(0, currentDirection, activeRotation);
         sprite.transform.localScale = new Vector3(currentDirection, 1, 1);
+        animator.SetFloat("Speed", body.velocity.magnitude);
+        animator.SetBool("IsGrounded", MagSwitch != 0);
     }
 
     public void Die()
