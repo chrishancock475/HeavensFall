@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 711eec31a095d3d4697c5e84786fd740
+guid: a13a5e3fc07a45048bec0c7bc718e88b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpikeUp_2_0
+      name: spike tileset 16_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a6774510c4e9d4a82fa38f75972e48
-      internalID: -145282331
+      spriteID: bb4aaae18131f1e4cb198d942c017020
+      internalID: -880377191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpikeUp_2_1
+      name: spike tileset 16_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90d4076fbe2e1484a98b964c328258e9
-      internalID: -691763889
+      spriteID: 928da8ac8c574754a95a9c1282e46a1c
+      internalID: -879283729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpikeUp_2_2
+      name: spike tileset 16_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a70388a7b13002642b331e3f5498f366
-      internalID: -110419138
+      spriteID: 406176e63e0ea33429656f1c3c318b18
+      internalID: -1018216730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpikeUp_2_3
+      name: spike tileset 16_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65056e0304070834b973dab399892d5a
-      internalID: 1418779744
+      spriteID: 86ecaf45f379ba0439c872c874d94c70
+      internalID: 1413665919
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpikeUp_2_0: -145282331
-      SpikeUp_2_1: -691763889
-      SpikeUp_2_2: -110419138
-      SpikeUp_2_3: 1418779744
+      spike tileset 16_0: -880377191
+      spike tileset 16_1: -879283729
+      spike tileset 16_2: -1018216730
+      spike tileset 16_3: 1413665919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

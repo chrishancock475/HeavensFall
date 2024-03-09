@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SpikeUp_2_0
+  m_Name: spike tileset 16_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -145282331, guid: 711eec31a095d3d4697c5e84786fd740, type: 3}
+  m_Sprite: {fileID: -879283729, guid: a13a5e3fc07a45048bec0c7bc718e88b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
