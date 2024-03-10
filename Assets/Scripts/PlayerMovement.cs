@@ -109,6 +109,15 @@ public class PlayerMovement : MonoBehaviour
             jumpDelay = jumpBuffer;
         }
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            Time.timeScale = .5f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+
 
 
     }
