@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public int surface;
     private float activeRotation;
     private int currentDirection;
+    bool timeReset;
 
     
     public int MagSwitch
@@ -112,10 +113,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             Time.timeScale = .5f;
+            timeReset = false;
         }
-        else
+        else if (!timeReset)
         {
             Time.timeScale = 1f;
+            timeReset = true;
         }
 
 
