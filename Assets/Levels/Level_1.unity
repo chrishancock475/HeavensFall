@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb3254be7efb4f0d96e27314917f966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cutscene: Cutscene_1
 --- !u!61 &120371620
 BoxCollider2D:
   m_ObjectHideFlags: 0
