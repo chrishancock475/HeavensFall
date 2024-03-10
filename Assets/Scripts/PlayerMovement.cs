@@ -1,10 +1,13 @@
 using System;
+using Cinemachine;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Inscribed")]
+    [Header("Movement Variables")]
     [SerializeField] private float maxSpeed;
     //[SerializeField] private float maxJumpSpeed;
     [SerializeField] private float speedMultiplier;
@@ -20,7 +23,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float wallJumpSpeed;
     [SerializeField] private float rotationSpeed;
 
+    [Header("Connected Objects")]
     [SerializeField] private GameObject sprite;
+    //[SerializeField] List<CinemachineVirtualCamera> allVirtualCameras;
     public Animator animator;
 
     [Header("Dynamic")] // For ease of testing and debugging
@@ -288,8 +293,26 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        GameManager.SetNextBlend(new CinemachineBlendDefinition(CinemachineBlendDefinition.Style.Cut, 0));
+        /*
+        foreach (var vcam in allVirtualCameras)
+        {
+            vcam.PreviousStateIsValid = false;
+            
+        }
+        */
+        Vector3 Delta = GameManager.checkpoint.position - transform.position;
         body.velocity = Vector3.zero;
         transform.position = GameManager.checkpoint.position;
+        
+        StartCoroutine(ResetBlendNextFrame());
+    }
+    private IEnumerator ResetBlendNextFrame()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForFixedUpdate();
+        yield return new WaitForFixedUpdate();
+        GameManager.ClearNextBlend();
     }
 
 }
