@@ -201,8 +201,8 @@ Transform:
   m_GameObject: {fileID: 42747560}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7139, y: 1.093, z: 0}
-  m_LocalScale: {x: 2.9812717, y: 3.3060253, z: 1}
+  m_LocalPosition: {x: -0.0151, y: 0.0432, z: 0}
+  m_LocalScale: {x: 1.7390718, y: 1.9538758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3252,14 +3252,12 @@ MonoBehaviour:
   m_text: ' Team Lead/composer - Chris Hancock
 
     Artist - Derrian Neaves, VJ Douglas,
-    Xavier Johnson
+    Xavier Johnson, Errik, Jett Butler
 
-    Programmer - Dylan Miranda, CJ Oyner
+    Programmer - Dylan Miranda, CJ Joyner
 
-    Technical Artist
-    - Sriram (Sam) Mohan
-
-    Level Designer - Em Schierts
+    Technical
+    Artist - Sriram (Sam) Mohan
 
 
 
