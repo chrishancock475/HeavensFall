@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        OnLevelEnd += NextLevel;
         OnCheckPointRecieved += SetNewCheckPoint;
     }
 
@@ -24,14 +23,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private static void NextLevel(object sender, EventArgs e)
-    {
-        // This will need a rework to scale for more scenes because scene count only appears to count the loaded scenes so we must load the scenes async to make that work
-        if (SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCount)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        else
-            SceneManager.LoadScene("Main_menu");
-    }
+
 
     public static void LoadNextLevel() // This is for the menu button
     {
@@ -51,7 +43,6 @@ public class GameManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        OnLevelEnd -= NextLevel;
         OnCheckPointRecieved -= SetNewCheckPoint;
     }
 }
