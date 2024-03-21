@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,10 +10,15 @@ public class GameManager : MonoBehaviour
     public static EventHandler<EventArgs> OnCheckPointRecieved;
     public static EventHandler<EventArgs> OnLevelEnd;
 
+    [SerializeField] int level;
+
+    public static int LEVEL;
+
 
     private void Awake()
     {
         OnCheckPointRecieved += SetNewCheckPoint;
+        LEVEL = level;
     }
 
     /// <summary>

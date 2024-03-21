@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
     private bool unpaused = false;
     void Start()
     {
-        pauseMenu = GetComponentInChildren<Canvas>().gameObject;
+        pauseMenu = GetComponentInChildren<UniqueClass>().gameObject;
         paused = false;
     }
 

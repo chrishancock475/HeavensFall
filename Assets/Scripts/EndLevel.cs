@@ -25,6 +25,11 @@ public class EndLevel : MonoBehaviour
         SceneManager.LoadScene(Cutscene); // please figure out how to fix this to work with the variable.
     }
 
+    public void Switch()
+    {
+        GameManager.OnLevelEnd?.Invoke(this, new EventArgs());
+    }
+
     private void OnDestroy()
     {
         GameManager.OnLevelEnd -= CutsceneStart;

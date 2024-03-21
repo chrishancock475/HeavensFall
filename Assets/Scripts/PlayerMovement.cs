@@ -11,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float decelMultiplier;
     [SerializeField] private float airMultiplier;
     [SerializeField] private float jumpSpeedMultiplier;
+    [SerializeField] private float superJumpSpeedMultiplier;
     [SerializeField] private float gravMultiplier;
     [SerializeField] private float lowGravMultiplier;
     [SerializeField] private float jumpBuffer;
+    [SerializeField] private float superJumpBuffer;
     [SerializeField] private float coyoteTime;
     [SerializeField] private bool conserveMomentum;
     [SerializeField] private float downJumpReduction;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Dynamic")] // For ease of testing and debugging
     [SerializeField] private float jumpDelay;
+    [SerializeField] private float superJumpDelay;
     [SerializeField] private float groundTime;
     [SerializeField] private bool isGrounded;
     public int surface;
@@ -104,11 +107,17 @@ public class PlayerMovement : MonoBehaviour
         _moveInput.y = Input.GetAxisRaw("Vertical"); // For wall running
         #endregion
         jumpDelay -= Time.deltaTime;
+        superJumpDelay -= Time.deltaTime;
         groundTime -= Time.deltaTime;
         if (Input.GetButtonDown("Jump"))
         {
             jumpDelay = jumpBuffer;
         }
+        else if (Input.GetKeyDown(KeyCode.C)  && GameManager.LEVEL > 1)
+        {
+            superJumpDelay = superJumpBuffer;
+        }
+
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -225,25 +234,48 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(movementY * downJumpReduction * Vector2.up, ForceMode2D.Force);
         }
 
-        if (surface % 4 >= 2 && groundTime > 0 && jumpDelay > 0)
+        // Handle jump velocity
+        if (surface % 4 >= 2 && groundTime > 0 && jumpDelay > 0 && superJumpDelay < 0)
         {
             body.velocity = new Vector2(jumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
             jumpDelay = 0.001f;
         }
-        if (surface % 16 >= 8 && groundTime > 0 && jumpDelay > 0)
+        if (surface % 16 >= 8 && groundTime > 0 && jumpDelay > 0 && superJumpDelay < 0)
         {
             body.velocity = new Vector2(-jumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
             jumpDelay = 0.001f;
         }
-        if (surface % 2 >= 1 && groundTime > 0 && jumpDelay > 0 && body.velocity.y <= 0.1f)
+        if (surface % 2 >= 1 && groundTime > 0 && jumpDelay > 0 && body.velocity.y <= 0.1f && superJumpDelay < 0)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y + jumpSpeedMultiplier);
             jumpDelay = 0.001f;
         }
-        if (surface % 8 >= 4 && groundTime > 0 && jumpDelay > 0)
+        if (surface % 8 >= 4 && groundTime > 0 && jumpDelay > 0 && superJumpDelay < 0)
         {
             body.velocity = new Vector2(body.velocity.x, body.velocity.y - jumpSpeedMultiplier * downJumpReduction);
             jumpDelay = 0.001f;
+        }
+
+        // Handle super jump
+        if (surface % 4 >= 2 && groundTime > 0 && jumpDelay < 0 && superJumpDelay > 0)
+        {
+            body.velocity = new Vector2(superJumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
+            superJumpDelay = 0.001f;
+        }
+        if (surface % 16 >= 8 && groundTime > 0 && jumpDelay < 0 && superJumpDelay > 0)
+        {
+            body.velocity = new Vector2(-superJumpSpeedMultiplier, Mathf.Max(body.velocity.y, wallJumpSpeed));
+            superJumpDelay = 0.001f;
+        }
+        if (surface % 2 >= 1 && groundTime > 0 && jumpDelay < 0 && body.velocity.y <= 0.1f && superJumpDelay > 0)
+        {
+            body.velocity = new Vector2(body.velocity.x, body.velocity.y + superJumpSpeedMultiplier);
+            superJumpDelay = 0.001f;
+        }
+        if (surface % 8 >= 4 && groundTime > 0 && jumpDelay < 0 && superJumpDelay > 0)
+        {
+            body.velocity = new Vector2(body.velocity.x, body.velocity.y - superJumpSpeedMultiplier * downJumpReduction);
+            superJumpDelay = 0.001f;
         }
 
         if (Input.GetButton("Jump") && MagSwitch == 0)
