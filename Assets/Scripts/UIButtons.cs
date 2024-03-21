@@ -2,17 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIButtons : MonoBehaviour
 {
     [SerializeField] string playScene;
-    GameObject menu;
+    #nullable enable
+    GameObject? menu;
+
 
     private void Awake()
     {
+        if (transform.parent.GetComponentInChildren<UniqueClass>() != null)
         menu = transform.parent.GetComponentInChildren<UniqueClass>().gameObject;
     }
 
@@ -42,13 +44,13 @@ public class UIButtons : MonoBehaviour
     {
         PauseMenu.paused = false;
         gameObject.SetActive(true);
-        menu.SetActive(false);
+        if (menu != null) menu.SetActive(false);
     }
 
     public void Credits()
     {
         PauseMenu.paused = false;
         gameObject.SetActive(true);
-        menu.SetActive(false);
+        if (menu != null) menu.SetActive(false);
     }
 }

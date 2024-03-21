@@ -5,12 +5,20 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     GameObject pauseMenu;
+    GameObject instructions;
     public static bool paused;
     private bool unpaused = false;
+
+    private void Awake()
+    {
+        instructions = GameObject.Find("Tutorial_Instructions");
+    }
     void Start()
     {
         pauseMenu = GetComponentInChildren<UniqueClass>().gameObject;
         paused = false;
+
+        if (GameManager.LEVEL != 1) instructions.SetActive(false);
     }
 
     
