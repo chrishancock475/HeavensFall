@@ -22,7 +22,7 @@ public class EndLevel : MonoBehaviour
 
     void CutsceneStart(object sender, EventArgs e)
     {
-        SceneManager.LoadScene("Main_menu"); // please figure out how to fix this to work with the variable.
+        SceneManager.LoadScene(Cutscene); // please figure out how to fix this to work with the variable.
     }
 
     private void OnDestroy()
