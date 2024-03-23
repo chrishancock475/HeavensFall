@@ -50080,6 +50080,7 @@ MonoBehaviour:
   conserveMomentum: 1
   downJumpReduction: 0.5
   wallJumpSpeed: 8
+  nairTime: 0.2
   rotationSpeed: 0.5
   sprite: {fileID: 1687442176}
   animator: {fileID: 427327965}
@@ -52893,7 +52894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5090396511783677956, guid: 848e56794ab314147875a4b1e51fa62b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7974839
+      value: -1.0213761
       objectReference: {fileID: 0}
     - target: {fileID: 5090396511783677956, guid: 848e56794ab314147875a4b1e51fa62b, type: 3}
       propertyPath: m_LocalPosition.y
