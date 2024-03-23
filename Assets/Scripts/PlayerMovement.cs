@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool conserveMomentum;
     [SerializeField] private float downJumpReduction;
     [SerializeField] private float wallJumpSpeed;
+    [SerializeField] private float nairTime;
     [SerializeField] private float rotationSpeed;
 
     [SerializeField] private GameObject sprite;
@@ -195,18 +196,18 @@ public class PlayerMovement : MonoBehaviour
 
         #region Conserve Momentum
         //We won't slow the player down if they are moving in their desired direction but at a greater speed than their maxSpeed
-        if (conserveMomentum && Mathf.Abs(body.velocity.x) > Mathf.Abs(targetSpeedX) && Mathf.Sign(body.velocity.x) == Mathf.Sign(targetSpeedX) && Mathf.Abs(targetSpeedX) > 0.01f && !isGrounded)
+        if (((conserveMomentum && Mathf.Abs(body.velocity.x) > Mathf.Abs(targetSpeedX) && Mathf.Sign(body.velocity.x) == Mathf.Sign(targetSpeedX) && Mathf.Abs(targetSpeedX) > 0.01f)&&!isGrounded||(_moveInput.x==0.0f && (surface % 4 >= 2 || surface % 16 >= 8)) && groundTime > -nairTime))
         {
             //Prevent any deceleration from happening, or in other words conserve are current momentum
             //You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
             accelRateX = 0;
         }
+        
         if (conserveMomentum && Mathf.Abs(body.velocity.y) > Mathf.Abs(targetSpeedY) && Mathf.Sign(body.velocity.y) == Mathf.Sign(targetSpeedY) && Mathf.Abs(targetSpeedY) > 0.01f && !isGrounded)
         {
-            //Prevent any deceleration from happening, or in other words conserve are current momentum
-            //You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
             accelRateY = 0;
         }
+        
         #endregion
 
         //Calculate difference between current velocity and desired velocity
