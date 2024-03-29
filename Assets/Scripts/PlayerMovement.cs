@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpDelay = jumpBuffer;
         }
-        else if (Input.GetKeyDown(KeyCode.C)  && GameManager.LEVEL > 1)
+        else if (Input.GetButtonDown("SuperJump")  && GameManager.LEVEL > 1)
         {
             superJumpDelay = superJumpBuffer;
         }
@@ -281,7 +281,7 @@ public class PlayerMovement : MonoBehaviour
             superJumpDelay = 0.001f;
         }
 
-        if (Input.GetButton("Jump") && MagSwitch == 0)
+        if ((Input.GetButton("Jump")||Input.GetButton("SuperJump")) && MagSwitch == 0)
         {
             body.gravityScale = lowGravMultiplier;
         }
