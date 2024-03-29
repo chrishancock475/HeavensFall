@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -333,8 +335,19 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        GameManager.SetNextBlend(new CinemachineBlendDefinition(CinemachineBlendDefinition.Style.Cut, 0));
+        Vector3 Delta = GameManager.checkpoint.position - transform.position;
         body.velocity = Vector3.zero;
         transform.position = GameManager.checkpoint.position;
+
+        StartCoroutine(ResetBlendNextFrame());
+    }
+    private IEnumerator ResetBlendNextFrame()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForFixedUpdate();
+        yield return new WaitForFixedUpdate();
+        GameManager.ClearNextBlend();
     }
 
 }
