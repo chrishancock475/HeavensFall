@@ -1,0 +1,4109 @@
+fileFormatVersion: 2
+guid: bb29ae708df321441a1816d38ab8a186
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 357
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db5c1241978bdf4188ccc0f81665b59
+      internalID: -1576907512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 341
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b882fe822e832fb43a930e5b45da0d86
+      internalID: 1562406390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 325
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d402bba6f58b89e449b9aa277a75f488
+      internalID: -751608443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0cc615e1a9a5940a741db890abd1f0
+      internalID: 1629065821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3d9e9b35638964c80c0a0a3e8fa8ed
+      internalID: 1140544794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfab1cbb50d07047b81f813f0e5feb7
+      internalID: 440314888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa523e418d0330b4eba8af2dfd0d4fce
+      internalID: 622068498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82eafb839f711a46857c01271f00bf4
+      internalID: -41319508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05e79cd8fac6d748ae4708c6728ffae
+      internalID: -859186182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7ce467f2b6e3c4f919f84d893ba5cb
+      internalID: 2125531102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fdab61bcd76ce428d11bc2f41bc9f6
+      internalID: 622937468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd01521573472ac4ab486d29102171a3
+      internalID: -1661345961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c84648a08335944aa68f6730e3fe03
+      internalID: 2094821796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7920f6b0d0f4b474b8c969031e600e57
+      internalID: -256955584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45b9a64dabbe73478a7ef1b16cc22d4
+      internalID: -843279818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d40224647f7e6c419ccfb787e694df3
+      internalID: 117141651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd88113ad633a14699e162e60400f1a
+      internalID: 119774135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b7b42d734c6334b83c9055d37bd86d
+      internalID: -251443474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_18
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9f9ec97756f114d93d461532081209
+      internalID: -536477104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33ef7561d77f454db4c267d274fb053
+      internalID: -992080058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c519f87921bd44e4c9f1ccc55f7ea006
+      internalID: -1245796089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae22e975b022be4590cdba0a700c231
+      internalID: 1173156915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975a94cbcf860fd45a341d746273d7b5
+      internalID: 592606726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682e8729ce5114a41b867f5c397914fc
+      internalID: -477073764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab2143d899df1545bc569977737dc4d
+      internalID: 1815184089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_25
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33566cd58452ae44f92afc00d95873f4
+      internalID: -1470541887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e18124b8647ca64fab10ea8edd6a744
+      internalID: -868979367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2b3363dea4d8f498d3a75bd3c3175d
+      internalID: 600409611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_28
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613ddf370bc0b6340960c2f856f5f8c2
+      internalID: 1137523691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f0ae13871ee2244a669c8a982a34fb
+      internalID: 1059609879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1e41e816242a943b592aee9d404353
+      internalID: 1997685869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e63685ce31a894a8bb7aa40761048b
+      internalID: 608250613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc86c4bd7a520348809ca210bcf7f9d
+      internalID: -939795327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8db470e8ea5c5408abd17257c2036f
+      internalID: 1142723876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9718ee4cf502c2140915ad91d0459c7c
+      internalID: -1271606601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4d9071ffed1be48a2cf3dc1a97116e
+      internalID: -205989612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f987dbb09d8443d4fb402dc52220c6bd
+      internalID: 125171707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40882524c570b5949bcc4984880b6494
+      internalID: -1446127819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a514b1b77ffc7647a6d5beba4253d9a
+      internalID: -1266597073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4f98c39bda3ce4993435a56bc90e9e
+      internalID: 1806608892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d02b76afd2aa5540944f7e82d80fb1c
+      internalID: -1335374678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7730101ad50df7c43a06b978eacf7a82
+      internalID: -1440371849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_42
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760fd8465197bf54cbd7e902a395b2cb
+      internalID: -116114600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_43
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b374bc84dfdeb4babcfdeec9209455
+      internalID: 823294430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77268cdca2cfcb43a98779592cbb208
+      internalID: 2016028141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1882ca28abcac594cb6322d448919f0e
+      internalID: -1034007537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823758e7462efa847aa427e2e2aeeb57
+      internalID: 1624801713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 277
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e33e6eb2d730f44b59ac3262427e4a
+      internalID: 199534739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a1479e126c6774e80ce40a06bcdfde
+      internalID: 1263658537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1617bcc1549310b4cac7bf301eee5597
+      internalID: 874857653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a411c01c3d8e738448aa745ceae9d3b9
+      internalID: -819684053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b17496986c5c754c9bd87dd7fdc601a
+      internalID: 969826861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0176cfa85d96ab4faa2514a6063e711
+      internalID: -2142711069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6b9bd632fadd34f8e7971ea7d0ea6e
+      internalID: 1516921843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_54
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5c8206cad7de8459edb53cb2744dea
+      internalID: -1571984535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f163dde25ae2d4ea4778489d1d4294
+      internalID: -1019773450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_56
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b2791df525a5146b852d8415b96026
+      internalID: -593290128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec0c6d0c5cc96549a9236932370af39
+      internalID: 1099328898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_58
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ec16c15f2897247a68a11bf4c25c47
+      internalID: -178026470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e773303109429c14fb391542fb8d2b43
+      internalID: 2104238066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_60
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635c2d64e0d2b334abc7191081b8057a
+      internalID: -664064806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_61
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec39e958101f5614f8394ff81ca4ddd2
+      internalID: 526486773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_62
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac39c785ed6c254ca5df3ed879a4902
+      internalID: -1925786267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26395538812a27a40af3ec977317ec44
+      internalID: -2070330843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_64
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5eff94947877346823a186dfae7a47
+      internalID: -687823369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_65
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4fffa8f0ac819498165dd1eab4043c
+      internalID: 1500322131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_66
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee737adea9b3dde4f8209f1ffed482c5
+      internalID: 567798808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39a97b62b01e604eab0cf019f3b27df
+      internalID: 1727330543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2872958f09ffe444384ae8e71131e023
+      internalID: -864440164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_69
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e131a0213b7d3429cf305ec1bd1dbf
+      internalID: 1031379009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_70
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac8ac1bb6d8d3a43aeb1e1cc27aa0e1
+      internalID: 1322805243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_71
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305c388a0bdd94db6cfbbfface9bf4
+      internalID: 1454104266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_72
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a3b3a546b910945a864e55c088a0d2
+      internalID: -90738010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_73
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77046645b4ba1d0489ec59b8d5e8c5b6
+      internalID: -875081691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a2d8bb57eeb634ea5f66d7529bf495
+      internalID: 228689460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_75
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380e64968ef152d408baab8dd44b516a
+      internalID: -1147505302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_76
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec1c2d96b53606429acc551617a9ad5
+      internalID: 867076457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_77
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4db532ae01b7c438edf5ff987ef386
+      internalID: -705399980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_78
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f407f4191bd697246b048b8ac7f338ce
+      internalID: -1667802512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_79
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcba915c6196e914d85205248e779d99
+      internalID: 1476077838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_80
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63163f6e78f154c478a792ae27464d01
+      internalID: 2014945032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_81
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab542a429a72e7248b6ef31a60a41ac8
+      internalID: -391766659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_82
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6974ca9fae2400943ba1716c44157bc0
+      internalID: 1461782959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_83
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95cb84793a1e6b4685b0bb4069a1743
+      internalID: 90321745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_84
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bf4dd3f168d6c4bb3f4ae8fe40c5aa
+      internalID: 711620870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_85
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333e479b37ef67e409aec88667bc7de3
+      internalID: 151538370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_86
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c837ee6e255048e47ba85b6f30619bda
+      internalID: 576044494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbaeffdb58c7694593c6167824ed79c
+      internalID: 489684398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_88
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e9ae3da925cc346a5bfc7065113a54
+      internalID: 344280124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_89
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b295cb613e930bc4098d93f8fd7011d3
+      internalID: 1786518275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e54153e5e890a438cc10bb2c0f5bee
+      internalID: 964113168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46ebf3d346bd1f4c8e39bc5b1b7f9a2
+      internalID: -198893363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0453c4b38f1d550499f5547a168b072f
+      internalID: -410304468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdaa09f279d7244995447f277bb7f53
+      internalID: -418947914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_94
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741e61b8966cba9469258d4507e047b1
+      internalID: 1981760476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f72217777ae6724d9bfe83892f8b28c
+      internalID: -1603350626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_96
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8673f5138536c684d91f1a612260849f
+      internalID: 716808011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1268f74ce0fabd4eb0122a547551325
+      internalID: -777712745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_98
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7862acff4cd0d2744a6219711cf8f67a
+      internalID: -248460150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa429dd21993e44192798ea7c7444a5
+      internalID: 1574220121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_100
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8055b51368ea5c40ac35f3e8ad1f647
+      internalID: -1286031612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_101
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6841a842e301a8e45a38f9bdeb464f9b
+      internalID: -1792918609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_102
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dd6ebefb73f574cb601763ba3ae001
+      internalID: 2043300107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_103
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca38bce1a8d21b449a1f10896be13f45
+      internalID: -1666840803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_104
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6484413ac2202d94cb6fcbb0ac8ffd49
+      internalID: -18642428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_105
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e233f104b459141a656d65fa18a836
+      internalID: -440766772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_106
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b045fcd9857d7b04993b61dab2e33178
+      internalID: 925735393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_107
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b34f039e0833d4b85cdfcb87c0a906
+      internalID: 352007637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_108
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ea1e5636b0ca4ca72c895e4d949f0
+      internalID: -14841321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_109
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b519d718742e340a2672870c46eb03
+      internalID: -1110086373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_110
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c640b89ed65116740898ea72199df853
+      internalID: 1222558248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_111
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4009d3fc6e2149e4284b8bf6971e2437
+      internalID: -1441233295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_112
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01473a9d541530f45b963cd84a8bc710
+      internalID: -1229669392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_113
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24284f0e223e5444fbf68ae5f12a2a39
+      internalID: -387220764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_114
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f6285dd7947fc4eb54fdfb6df04b4a
+      internalID: 1326127494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_115
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354a09bbacef3144d8fe819b2ddb2b7b
+      internalID: 1103078294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_116
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209aa9f20024c4a43b06fe32d1d1e94c
+      internalID: -1322421264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_117
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ff81d149a79aa4290040e2c2e855bd
+      internalID: 2017041838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_118
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150b90b91c656c34baf0e5c28819e47b
+      internalID: -1911311021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_119
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e7d2b18a9b7b94bbf0e94fb2d68aa9
+      internalID: -418978836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_120
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b3574045f6ad74eac7f2395019862d
+      internalID: 1521852905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_121
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2418c60501fae084bba1b15cddca5947
+      internalID: -184761480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_122
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9dbb6c2aaad1a4e845117e73f6c083
+      internalID: 199672927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_123
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6ef436cc4525a43b65f12ef676fc90
+      internalID: 1604241081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_124
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6c9924ea3c04940bd085a9bc592ca5
+      internalID: 897004851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_125
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf4688ca2b078b45953faab0e2fd182
+      internalID: 1465630968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_126
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b40a88ab052c146abc988c7b4c2576
+      internalID: 1073480795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_127
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e80b97c0c0c8bb42a6f45626790fd30
+      internalID: 926684980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_128
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736f1b601c665b649b1c514cc1ef93b2
+      internalID: 1977307619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_129
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d852d272cad61b42ab49afc152d28e5
+      internalID: -63977549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_130
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50fc71e8d75c6c4cac1e7f2ccc0f329
+      internalID: 139647879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_131
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb86dd0ba9ed02459edb9fc04af6b12
+      internalID: 1780490718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_132
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee4d18dee17c1240b84be46aff7c182
+      internalID: -437580748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_133
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900dd3b0d6cbf014cb6635455f36a1bc
+      internalID: 937955265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_134
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace1bf78b14fa0c498dea840cbad16f6
+      internalID: -720722016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_135
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3362e08445d037b49a837332b8c87439
+      internalID: -806512771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_136
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a3dec0142fae649a8658b093aec849
+      internalID: 1485913670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_137
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d616d1b723e694d9d1e7784f128d83
+      internalID: -1778166645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_138
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619b79931b455774ebd495df8c593289
+      internalID: 1103261809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_139
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f902ac80d78cb4f8a416ebf13a6c21
+      internalID: 2050163825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_140
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ceb9ce5b4e9b34392920e58b7d579c
+      internalID: 35378273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_141
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81076fb9b7c79e94eb289e50c7920b3f
+      internalID: -1060152967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_142
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7197008db3dd2aa42917d46e26d8f31a
+      internalID: 1175336120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_143
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f612837a6a32441aceedd2dc750bc7
+      internalID: -711183532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_144
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaca154708163d468aa1e138ab1dac1
+      internalID: 772975582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_145
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130573b6abceb53479904c321fcf8ad7
+      internalID: -1206929939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_146
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcdd0fb28b60c545b8bc37f313c3a3b
+      internalID: -731880854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_147
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bf5d44fdabb0f468e791c997ecc5df
+      internalID: -1196257365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_148
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f18cabbfcd0efa46b630562efd8dd71
+      internalID: -1492724687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_149
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61045f62cf6038e46be29c4e6bee17ae
+      internalID: -1535899926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_150
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff00ece7d996794dae0f046e7eca7c5
+      internalID: -1926669684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_151
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a695c64521bbe3f4b91f0c3a32ddb4a0
+      internalID: -49697396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_152
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9655aaf77983efc48872be8b65f51ead
+      internalID: -689966852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_153
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d71f4e066b3f34f88de1dcbad87a3e
+      internalID: 613804459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_154
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84163df939f6530459d4df949c7ed886
+      internalID: -1481344469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_155
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e93736437c14045abaaa40e646da80
+      internalID: -1625050558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_156
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a1ee4b8e4b946478130f65e7dfde00
+      internalID: -642089104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_157
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e7d774f1f474f4a929bf5a3b38b77a
+      internalID: -382341263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_158
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf4a9f8efed7644f80584fc5024e08e
+      internalID: 1445127656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_159
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fe8e383d53f8946b897166cce296f7
+      internalID: 1903437102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_160
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b50a7872ec17574d8fe2056f45a6464
+      internalID: -282547212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_161
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10756f0b200741c448b0130b3c876979
+      internalID: -1768804136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_162
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a5628b08f79bf499bb9a52fa71db34
+      internalID: -1321835833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_163
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18f8cb36da17f849b07b4877f4043a2
+      internalID: -1478848712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_164
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5da2c01aefe1d49840ee810976fbbf
+      internalID: 1107783567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_165
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a326672c82cfbeb49883bd7807f54077
+      internalID: 1919010351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_166
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f8ed4df2ba7fc4b9a4e18e8ac1c288
+      internalID: -304309888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_167
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e7c179db720784f908ac2bd2f109ae
+      internalID: 1719417421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_168
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069d831437b6b3349a8614e9e591175f
+      internalID: -499840104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_169
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1283594441ac3468df3abaa77295cd
+      internalID: 1602717144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_170
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428b29403efca814ba68fb8e9b95c885
+      internalID: 2042203097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_171
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3458f1691a691824e970577c59acdf15
+      internalID: 15065925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_172
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca65c362ff2493548b46a6c474e7bec0
+      internalID: 204038676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_173
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b09deded031c440a2f27af7400febf
+      internalID: -544965916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_174
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c2c06c2e46d2b49af7117a699f70b9
+      internalID: -1637643048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_175
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d592a6f2f5c3f164290ac8ea8f96a627
+      internalID: 467788660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_176
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82539579408a624ea16777b1a5eaf39
+      internalID: -907376564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_177
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac8d6ea88609f943b9b25dd49f09d83
+      internalID: -322269124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_178
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80645077038e1e4c8d7230b798f071f
+      internalID: 1414092320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_179
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3a7818c49b3634b908a25d52080a3f
+      internalID: -865231803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overgrown Mech Tiles_180
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733255687a92fa542a35b8dc3e8eb58d
+      internalID: -1051258331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Overgrown Mech Tiles_0: -1576907512
+      Overgrown Mech Tiles_1: 1562406390
+      Overgrown Mech Tiles_10: 622937468
+      Overgrown Mech Tiles_100: -1286031612
+      Overgrown Mech Tiles_101: -1792918609
+      Overgrown Mech Tiles_102: 2043300107
+      Overgrown Mech Tiles_103: -1666840803
+      Overgrown Mech Tiles_104: -18642428
+      Overgrown Mech Tiles_105: -440766772
+      Overgrown Mech Tiles_106: 925735393
+      Overgrown Mech Tiles_107: 352007637
+      Overgrown Mech Tiles_108: -14841321
+      Overgrown Mech Tiles_109: -1110086373
+      Overgrown Mech Tiles_11: -1661345961
+      Overgrown Mech Tiles_110: 1222558248
+      Overgrown Mech Tiles_111: -1441233295
+      Overgrown Mech Tiles_112: -1229669392
+      Overgrown Mech Tiles_113: -387220764
+      Overgrown Mech Tiles_114: 1326127494
+      Overgrown Mech Tiles_115: 1103078294
+      Overgrown Mech Tiles_116: -1322421264
+      Overgrown Mech Tiles_117: 2017041838
+      Overgrown Mech Tiles_118: -1911311021
+      Overgrown Mech Tiles_119: -418978836
+      Overgrown Mech Tiles_12: 2094821796
+      Overgrown Mech Tiles_120: 1521852905
+      Overgrown Mech Tiles_121: -184761480
+      Overgrown Mech Tiles_122: 199672927
+      Overgrown Mech Tiles_123: 1604241081
+      Overgrown Mech Tiles_124: 897004851
+      Overgrown Mech Tiles_125: 1465630968
+      Overgrown Mech Tiles_126: 1073480795
+      Overgrown Mech Tiles_127: 926684980
+      Overgrown Mech Tiles_128: 1977307619
+      Overgrown Mech Tiles_129: -63977549
+      Overgrown Mech Tiles_13: -256955584
+      Overgrown Mech Tiles_130: 139647879
+      Overgrown Mech Tiles_131: 1780490718
+      Overgrown Mech Tiles_132: -437580748
+      Overgrown Mech Tiles_133: 937955265
+      Overgrown Mech Tiles_134: -720722016
+      Overgrown Mech Tiles_135: -806512771
+      Overgrown Mech Tiles_136: 1485913670
+      Overgrown Mech Tiles_137: -1778166645
+      Overgrown Mech Tiles_138: 1103261809
+      Overgrown Mech Tiles_139: 2050163825
+      Overgrown Mech Tiles_14: -843279818
+      Overgrown Mech Tiles_140: 35378273
+      Overgrown Mech Tiles_141: -1060152967
+      Overgrown Mech Tiles_142: 1175336120
+      Overgrown Mech Tiles_143: -711183532
+      Overgrown Mech Tiles_144: 772975582
+      Overgrown Mech Tiles_145: -1206929939
+      Overgrown Mech Tiles_146: -731880854
+      Overgrown Mech Tiles_147: -1196257365
+      Overgrown Mech Tiles_148: -1492724687
+      Overgrown Mech Tiles_149: -1535899926
+      Overgrown Mech Tiles_15: 117141651
+      Overgrown Mech Tiles_150: -1926669684
+      Overgrown Mech Tiles_151: -49697396
+      Overgrown Mech Tiles_152: -689966852
+      Overgrown Mech Tiles_153: 613804459
+      Overgrown Mech Tiles_154: -1481344469
+      Overgrown Mech Tiles_155: -1625050558
+      Overgrown Mech Tiles_156: -642089104
+      Overgrown Mech Tiles_157: -382341263
+      Overgrown Mech Tiles_158: 1445127656
+      Overgrown Mech Tiles_159: 1903437102
+      Overgrown Mech Tiles_16: 119774135
+      Overgrown Mech Tiles_160: -282547212
+      Overgrown Mech Tiles_161: -1768804136
+      Overgrown Mech Tiles_162: -1321835833
+      Overgrown Mech Tiles_163: -1478848712
+      Overgrown Mech Tiles_164: 1107783567
+      Overgrown Mech Tiles_165: 1919010351
+      Overgrown Mech Tiles_166: -304309888
+      Overgrown Mech Tiles_167: 1719417421
+      Overgrown Mech Tiles_168: -499840104
+      Overgrown Mech Tiles_169: 1602717144
+      Overgrown Mech Tiles_17: -251443474
+      Overgrown Mech Tiles_170: 2042203097
+      Overgrown Mech Tiles_171: 15065925
+      Overgrown Mech Tiles_172: 204038676
+      Overgrown Mech Tiles_173: -544965916
+      Overgrown Mech Tiles_174: -1637643048
+      Overgrown Mech Tiles_175: 467788660
+      Overgrown Mech Tiles_176: -907376564
+      Overgrown Mech Tiles_177: -322269124
+      Overgrown Mech Tiles_178: 1414092320
+      Overgrown Mech Tiles_179: -865231803
+      Overgrown Mech Tiles_18: -536477104
+      Overgrown Mech Tiles_180: -1051258331
+      Overgrown Mech Tiles_19: -992080058
+      Overgrown Mech Tiles_2: -751608443
+      Overgrown Mech Tiles_20: -1245796089
+      Overgrown Mech Tiles_21: 1173156915
+      Overgrown Mech Tiles_22: 592606726
+      Overgrown Mech Tiles_23: -477073764
+      Overgrown Mech Tiles_24: 1815184089
+      Overgrown Mech Tiles_25: -1470541887
+      Overgrown Mech Tiles_26: -868979367
+      Overgrown Mech Tiles_27: 600409611
+      Overgrown Mech Tiles_28: 1137523691
+      Overgrown Mech Tiles_29: 1059609879
+      Overgrown Mech Tiles_3: 1629065821
+      Overgrown Mech Tiles_30: 1997685869
+      Overgrown Mech Tiles_31: 608250613
+      Overgrown Mech Tiles_32: -939795327
+      Overgrown Mech Tiles_33: 1142723876
+      Overgrown Mech Tiles_34: -1271606601
+      Overgrown Mech Tiles_35: -205989612
+      Overgrown Mech Tiles_36: 125171707
+      Overgrown Mech Tiles_37: -1446127819
+      Overgrown Mech Tiles_38: -1266597073
+      Overgrown Mech Tiles_39: 1806608892
+      Overgrown Mech Tiles_4: 1140544794
+      Overgrown Mech Tiles_40: -1335374678
+      Overgrown Mech Tiles_41: -1440371849
+      Overgrown Mech Tiles_42: -116114600
+      Overgrown Mech Tiles_43: 823294430
+      Overgrown Mech Tiles_44: 2016028141
+      Overgrown Mech Tiles_45: -1034007537
+      Overgrown Mech Tiles_46: 1624801713
+      Overgrown Mech Tiles_47: 199534739
+      Overgrown Mech Tiles_48: 1263658537
+      Overgrown Mech Tiles_49: 874857653
+      Overgrown Mech Tiles_5: 440314888
+      Overgrown Mech Tiles_50: -819684053
+      Overgrown Mech Tiles_51: 969826861
+      Overgrown Mech Tiles_52: -2142711069
+      Overgrown Mech Tiles_53: 1516921843
+      Overgrown Mech Tiles_54: -1571984535
+      Overgrown Mech Tiles_55: -1019773450
+      Overgrown Mech Tiles_56: -593290128
+      Overgrown Mech Tiles_57: 1099328898
+      Overgrown Mech Tiles_58: -178026470
+      Overgrown Mech Tiles_59: 2104238066
+      Overgrown Mech Tiles_6: 622068498
+      Overgrown Mech Tiles_60: -664064806
+      Overgrown Mech Tiles_61: 526486773
+      Overgrown Mech Tiles_62: -1925786267
+      Overgrown Mech Tiles_63: -2070330843
+      Overgrown Mech Tiles_64: -687823369
+      Overgrown Mech Tiles_65: 1500322131
+      Overgrown Mech Tiles_66: 567798808
+      Overgrown Mech Tiles_67: 1727330543
+      Overgrown Mech Tiles_68: -864440164
+      Overgrown Mech Tiles_69: 1031379009
+      Overgrown Mech Tiles_7: -41319508
+      Overgrown Mech Tiles_70: 1322805243
+      Overgrown Mech Tiles_71: 1454104266
+      Overgrown Mech Tiles_72: -90738010
+      Overgrown Mech Tiles_73: -875081691
+      Overgrown Mech Tiles_74: 228689460
+      Overgrown Mech Tiles_75: -1147505302
+      Overgrown Mech Tiles_76: 867076457
+      Overgrown Mech Tiles_77: -705399980
+      Overgrown Mech Tiles_78: -1667802512
+      Overgrown Mech Tiles_79: 1476077838
+      Overgrown Mech Tiles_8: -859186182
+      Overgrown Mech Tiles_80: 2014945032
+      Overgrown Mech Tiles_81: -391766659
+      Overgrown Mech Tiles_82: 1461782959
+      Overgrown Mech Tiles_83: 90321745
+      Overgrown Mech Tiles_84: 711620870
+      Overgrown Mech Tiles_85: 151538370
+      Overgrown Mech Tiles_86: 576044494
+      Overgrown Mech Tiles_87: 489684398
+      Overgrown Mech Tiles_88: 344280124
+      Overgrown Mech Tiles_89: 1786518275
+      Overgrown Mech Tiles_9: 2125531102
+      Overgrown Mech Tiles_90: 964113168
+      Overgrown Mech Tiles_91: -198893363
+      Overgrown Mech Tiles_92: -410304468
+      Overgrown Mech Tiles_93: -418947914
+      Overgrown Mech Tiles_94: 1981760476
+      Overgrown Mech Tiles_95: -1603350626
+      Overgrown Mech Tiles_96: 716808011
+      Overgrown Mech Tiles_97: -777712745
+      Overgrown Mech Tiles_98: -248460150
+      Overgrown Mech Tiles_99: 1574220121
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
