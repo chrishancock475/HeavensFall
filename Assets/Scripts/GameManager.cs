@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Cinemachine;
+using static Cinemachine.CinemachineCore;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,10 +12,15 @@ public class GameManager : MonoBehaviour
     public static EventHandler<EventArgs> OnCheckPointRecieved;
     public static EventHandler<EventArgs> OnLevelEnd;
 
+    [SerializeField] int level;
+
+    public static int LEVEL;
+
 
     private void Awake()
     {
         OnCheckPointRecieved += SetNewCheckPoint;
+        LEVEL = level;
     }
 
     /// <summary>
@@ -45,4 +50,32 @@ public class GameManager : MonoBehaviour
     {
         OnCheckPointRecieved -= SetNewCheckPoint;
     }
+
+    #region CM LOGIC
+    private static CinemachineBlendDefinition? nextBlend;
+    static GameManager()
+    {
+        CinemachineCore.GetBlendOverride = GetBlendOverrideDelegate;
+    }
+    public static void ClearNextBlend()
+    {
+        nextBlend = null;
+    }
+
+    public static void SetNextBlend(CinemachineBlendDefinition blend)
+    {
+        nextBlend = blend;
+    }
+
+    public static CinemachineBlendDefinition GetBlendOverrideDelegate(ICinemachineCamera fromVcam, ICinemachineCamera toVcam, CinemachineBlendDefinition defaultBlend, MonoBehaviour owner)
+    {
+        if (nextBlend.HasValue)
+        {
+            var blend = nextBlend.Value;
+            nextBlend = null;
+            return blend;
+        }
+        return defaultBlend;
+    }
+    #endregion
 }

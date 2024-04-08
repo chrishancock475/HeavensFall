@@ -16,6 +16,7 @@ public class Checkpoint : MonoBehaviour
             Debug.Log("Checkpoint!!");
 
             GetComponent<BoxCollider2D>().enabled = false;
+            
         }
     }
 
