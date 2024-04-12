@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: Level_1
-  cutscene_length: 41
+  cutscene_length: 39
 --- !u!1 &2017937237
 GameObject:
   m_ObjectHideFlags: 0
