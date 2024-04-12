@@ -618,7 +618,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983274873}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: aa8cd57493a3d2945ba85a4215578351, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 2d2b9da08ac266342bbda716e7af2656, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -674,6 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: Level_1
+  cutscene_length: 41
 --- !u!1 &2017937237
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 708, y: -430}
+  m_AnchoredPosition: {x: 708, y: -477}
   m_SizeDelta: {x: 399.32, y: 122.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017937239
