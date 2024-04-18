@@ -11,6 +11,7 @@ public class KillPlayer : MonoBehaviour
             PlayerMovement player = collision.GetComponentInParent<PlayerMovement>();
             if (player != null)
             {
+                GameManager.deathCount++;
                 player.Die();
             }
         }

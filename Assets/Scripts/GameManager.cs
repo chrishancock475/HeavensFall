@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     public static int LEVEL;
 
+    public static float time;
+    public static int deathCount;
+
 
     private void Awake()
     {
@@ -49,6 +52,11 @@ public class GameManager : MonoBehaviour
     private void OnDestroy()
     {
         OnCheckPointRecieved -= SetNewCheckPoint;
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime;
     }
 
     #region CM LOGIC
