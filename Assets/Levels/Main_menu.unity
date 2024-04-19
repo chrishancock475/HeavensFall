@@ -1062,7 +1062,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 80332fce5ec0f79438d2f94658a2d59a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.607
+  m_Volume: 0.496
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1074,9 +1074,9 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1136,7 +1136,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3008,16 +3008,19 @@ MonoBehaviour:
   m_text: ' Team Lead/composer - Chris Hancock
 
     Artist - Derrian Neaves, VJ Douglas,
-    Xavier Johnson, Errik, Jett Butler
+    Xavier Johnson
 
-    Programmer - Dylan Miranda, CJ Joyner
+    Concept Artist-  Jett Butler, Kanzanic
 
-    Technical
-    Artist - Sriram (Sam) Mohan
+    Programmer -
+    Dylan Miranda, CJ Joyner
+
+    Technical Artist - Sriram (Sam) Mohan, Errik
 
 
 
-    PantherDev, 2024'
+    PantherDev,
+    2024'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

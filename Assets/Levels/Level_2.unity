@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb3254be7efb4f0d96e27314917f966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cutscene: End screen
+  Cutscene: Cutscene_3
 --- !u!61 &52172142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18336,7 +18336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb3254be7efb4f0d96e27314917f966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cutscene: End screen
+  Cutscene: Cutscene_3
 --- !u!61 &169534040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48356,7 +48356,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f4a6045d0037d5f468003d9419b8935b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.45
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
