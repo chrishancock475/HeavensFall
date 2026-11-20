@@ -23,5 +23,5 @@ Owner decisions (recorded in docs/scope.md Part 3): Rayne plus a party; a simple
 depth from advanced combat and movement techniques; next milestone = combat + map prototype slice.
 
 Next Session:
-Combat + map prototype slice on a new branch off NEW-MAIN. First step: write docs/prototype_spec.md
-(inputs, combat tech list, one party member, room graph for the slice) and get the owner's OK, then build.
+Combat + map prototype slice on a new branch off NEW-MAIN. docs/prototype_spec.md is drafted (John joins,
+single-scene map). Get the owner's OK on it and answers to its section 11, then build.
