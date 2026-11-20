@@ -22,6 +22,14 @@ content. Doc tags (MVP / EXTRA / POLISH) were inferred because the PDF highlight
 Owner decisions (recorded in docs/scope.md Part 3): Rayne plus a party; a simple combat input set with
 depth from advanced combat and movement techniques; next milestone = combat + map prototype slice.
 
+Prototype progress (same sitting, 2026-11-19):
+- Spec approved (shared HP, damaging spikes, RPG keys U/J/I/Shift/O). Branch proto/combat-slice.
+- Grok installed Unity 2022.3.19f1 and .NET SDK 8.0.428. Unity is NOT licensed yet (owner must sign in).
+- All prototype code written and committed (5226f4d). It compiles against the Unity DLLs with dotnet,
+  but the scene has not been generated and nothing has been play-tested.
+
 Next Session:
-Combat + map prototype slice on a new branch off NEW-MAIN. docs/prototype_spec.md is drafted (John joins,
-single-scene map). Get the owner's OK on it and answers to its section 11, then build.
+1. Owner signs in to Unity Hub and activates a Personal license.
+2. Grok runs, in batch mode: ProtoSliceBuilder.BuildFromCommandLine, then checks the Editor log for errors.
+3. Owner opens Proto_Slice and plays R1 -> Warden -> R7 -> R8 -> R1; note what feels wrong in docs/.
+4. Tune jump/dash numbers against the map (fence staircase in R2, shaft in R3, R5 exit climb).
