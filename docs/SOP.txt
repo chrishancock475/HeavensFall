@@ -1,0 +1,34 @@
+Heaven's Fall - project SOP
+===========================
+
+Precedence: master project SOP (none yet), then global SOP (~/.claude/CLAUDE.md), then this file.
+
+Stack
+- Unity 2022.3.19f1 (exact version - open with this editor from Unity Hub, do not upgrade without a decision).
+- 2D: Cinemachine, 2D Animation/IK, Tilemap, SpriteShape, PixelPerfect, TextMesh Pro, Burst.
+- Old input manager (Input.GetAxisRaw / GetButton). Axes used: Horizontal, Vertical, Jump, SuperJump.
+- Remote: https://github.com/chrishancock375/HeavensFall  default branch NEW-MAIN.
+
+Repo rules
+- Work on a feature branch off NEW-MAIN; merge to NEW-MAIN only when it builds and plays.
+- Never push, force-push, delete or rename remote branches without the owner's OK.
+- Never delete or rename scenes, prefabs or .meta files by hand outside Unity (breaks GUIDs).
+- Large binaries (wav, png, zip) are not in LFS today. Do not add new zips of the project to git.
+- Builds/ and Library/ stay ignored.
+
+Docs
+- docs/session.txt           current sitting: Goals, Dont Break, Done When, Next Session.
+- docs/sessionN.txt          archived sittings. At the end of a sitting copy session.txt to the next
+                             free sessionN.txt, then rewrite session.txt for the next one.
+- docs/scope.md              the combined design and the feature inventory (built / partial / missing).
+- docs/design_*.txt          text extracts of the two original PDFs (read these, not the PDFs).
+- msg/*.done.txt             replies from helper AIs (Grok) when used.
+
+Session start
+1. Read global SOP, CLAUDE.md, this file, docs/session.txt, latest docs/sessionN.txt, msg/*.done.txt.
+2. Report Goal, Done when, Dont break, last finished, Next Session forecast.
+3. Wait for the owner's OK before changing anything.
+
+Verification
+- Claude cannot run the Unity editor here. Anything that needs play-testing or a build is either
+  handed to the owner or to Grok (buddy ask grok ...) with exact steps and a log file in the project.

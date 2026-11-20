@@ -1,0 +1,403 @@
+Chris Hancock                                          1
+
+12/13/2023                                   
+
+Heaven's fall
+
+  Table of contents
+
+  Game engine:                                   pg2
+                                                 pg2
+  Genre:                                          pg2
+                                                  pg3
+  Narrative:                                      pg3
+                                                 pg3
+  Gameplay Loop:                                  pg4
+                                                  pg5
+  Mechanics:                                      pg5
+                                                  pg6
+          Movement:                               pg7
+                                                  pg8
+          Mag-switch:                            pg8
+                                                 pg9
+  Art Design:                                    pg10
+                                                 pg11
+          Levels:                                pg13
+                                                 pg13
+          Character:                             pg14
+                                                 pg14
+  Level design:                                  pg14
+
+          Stage 1, the construction yard:
+
+          Stage 2, the garden:
+
+          Stage 3, the control room:
+
+  User Interface:
+
+  Required roles:
+
+  Moodboard:
+
+  Music:
+
+  Sound design:
+
+  Schedule:
+
+  Milestone goals:
+Chris Hancock                          2
+
+12/13/2023                
+
+Unity
+
+(Quick Note: Green highlighted text is core features required for MVP, Red is for additional
+features that would improve the game but not required for MVP, yellow highlighted text is polish).
+
+Genre
+
+         Heaven's Fall is a 2d platformer.
+In most 2d platformers, you fall down, and walk on the floor, but what if you could walk on walls
+and ceilings. That paired with the ability to jumping momentum into running momentum and vice
+versa allows for a fast paced smooth platforming experience. As the player plays through the
+game and learns how to fully use the movement system, they will be able to complete the
+platforming challenges and make it further into the game.
+
+Narrative
+
+         Rayne is a salvager who climbs crashed colony ships salvaging parts in order to build a
+working space ship that is able to leave the solar system. He finds a ship that made a crash
+landing in the desert and must climb it to find a computer in the control module. When inside he
+hears a mysterious voice that tempts him with promises of moving between stars in mere
+minutes. Rayne finds the place has been booby trapped by the natives as he finds spikes
+everywhere. As Rayne gets closer and closer to the control room, he starts to see strange
+paintings on the wall. When he gets to the control room he finds a strange pedestal with a crystal
+on it. The voice tells him to go and touch the crystal if he wants to become a god. The player then
+will move towards the crystal and when they touch it, the game fades to black with a final line
+from both of the characters in unison "let the heavens fall."
+
+  .
+
+                    Gameplay Loop
+Chris Hancock                                                                         3
+
+12/13/2023                                     
+
+  1. Challenge- It is impossible to reach the exit by just walking and jumping to it, the player
+      will have to use mag-switch in order to reach the exit of each room while avoiding spikes
+      along the way.
+
+  2. Learn- By experimenting with mag-switch and the movement system, the player will learn
+      how to build up speed and clear jumps as well as avoid spikes.
+
+  3. Reward- Part of the reward for learning the movement system is the enjoyment from
+      moving fast and the satisfaction of moving fast through the level. I also hope to make the
+      story a reward for reaching the new levels so the mystery can draw players in.
+
+Mechanics
+
+     Movement
+              Running- done by pressing A, D, W, or S. Depending on which wall the player is on
+                  they will be able to run either up and down or left and right.
+              Aerial drift- done by pressing A or D while in the air, velocity cap will be reached
+                  in half a second. After the x velocity cap is exceeded, acceleration in that
+                  direction will no longer function, but acceleration in the opposite direction is
+                  enabled.
+              Friction- your horizontal speed will be decreased when the player stops running.
+              Jumping- done by pressing SPACEBAR. While the spacebar is held down the
+                  gravitational acceleration is lower than without it held down. This allows for
+                  greater control of vertical movement.
+
+   Mag-switch
+
+  This mechanic is the crux of the game and I believe this video is the most concise way to
+
+show it off. https://youtu.be/SP-c2Cniguk
+
+  Mag-switch allowes the player to walk on the red walls and platforms. Depending on which
+
+surface the player is walking on, either left and right or up and down walking will be disabled. The
+
+player will automatically be pulled into mag-switch when they touch a steel wall and
+Chris Hancock                                             4
+
+12/13/2023                                          
+
+automatically exit it when they jump or otherwise loose contact with the surface. Mag-switch will
+
+allow the player to jump from a higher position or carry momentum from jumping into running up
+
+a wall in order to move fast. Every stage will be designed around this mechanic and the player
+
+must interact with it in order to beat the game.
+
+ Game state end and reset-
+          The game state will end once the end of the last room is reached, or the ending
+             cutscene plays, or back to main menu is selected from the pause menu.
+          Lives, death and respawn- The player will die in one hit. The player will have
+             unlimited lives, though a limit may be needed for a smooth experience at the
+             showcases, the player will automatically respawn at the beginning of the room
+             they are currently in.
+
+ Stage elements
+          Mag-field. They are invisible hitboxes that change your mag-switch variable. The
+             color of the surface you are trying to walk on will indicate if there is a mag field
+             there.
+          Steel blocks. They are the standard floor and walls. They are able to be walked on
+             and have a mag field next to them.
+          Aluminum Blocks. They are nonmagnetic walkable surfaces that do not have a mag
+             field. They are used to create one way pathways and other obstacles in the game.
+          Spikes. They are a one hit kill entity that acts as a punishment for failing a
+             platforming challenge. They are made of aluminum but will look much newer than
+             the other aluminum assets have very little corrosion to tell them apart.
+          Checkpoint. They will set your spawn point. These may be in the 2nd build of the
+             game.
+
+ Camera and visual effects
+          Camera- the camera will be 3rd person and will move with the player character in
+             the middle of the screen. Some rooms will have a fixed camera if they are small
+             enough and some will follow the player. All may follow the player if it produces a
+Chris Hancock                                                          5
+
+12/13/2023                
+
+better playing experience. The transition between rooms will likely take cues from
+
+fall of the tyrant since we will likely use a grid system for levels.
+
+Art design
+
+Level
+The graphics will be 2d pixel art. The game takes place in a crashed space station that is now a
+tower. The floor is now the background wall and the The background will be metal overgrown with
+plant life. I would like the metal walls of the tower to be in various states of rusting. I want there
+to be a variety of shades of rust from red to blue on the walls, The aluminum level elements will
+look like the case hardened skin pictured below. The spikes will have an uncorroded aluminum
+look in order for the player to immediately identify it.
+Chris Hancock                   6
+
+12/13/2023                
+
+It is very important that the player associates blue with non-magnetic surfaces and red with
+magnetic surfaces. They shouldn't need to be a metallurgist to figure out which surface is which.
+
+Character design
+Rayne, He is a human wearing a black loose fitting suit similar to the stillsuit from dune.
+Chris Hancock                                                                             7
+
+12/13/2023                             
+
+                                 Level design
+
+  The game is split up into different rooms. Each room will only have one exit and the goal is
+
+to reach that through platforming. Each room will have walls, platforms, and level elements. They
+
+will be color coded blue for aluminum which mag-switch doesn't work on, and red for steel which
+
+the mag-switch works on. The spikes will be instant kill and serve as a way to avoid players just
+
+walking on the ceiling to solve all the puzzles. Some platforms will have gaps that are not
+
+possible to make from the ground or a standing jump and need momentum to be built up before
+
+hand in order to cross the gap.
+
+  There will be 5 rooms total, The first 2 rooms that will be ready for the first showcase will
+
+be based on sketches I have made in pre production. These levels will take place in the
+
+construction yard. That way the team will have a decisive vision to start out with and will have
+
+time to learn the game's mechanics before designing the next ones. Right after the first
+
+showcase, everyone will submit their puzzle ideas and we will vote on which ones to implement in
+
+the next batch of 2 levels. The same will apply with the 5th level which will be ready for the last
+
+milestone. The final level will be the culmination of all of the feedback and experience we have.
+Chris Hancock                   8
+
+12/13/2023                
+
+Construction depot
+
+         A construction yard that has been abandoned. Since most of the machinery was bolted to
+the floor, the room is the least affected by the crash. The player will platform on metal beams that
+are suspended by machinery. If time permits the crane arms will be in the background and be
+able to be moved by the level dev team as they wish.
+Chris Hancock                   9
+
+12/13/2023                
+
+ The garden
+
+It is a former garden overgrown with vines. The soil has eroded away and vines now grow where
+crops like wheat and rice once grew. The player will climb on water pipes used for the sprinkler
+system some of which have broken, allowing the player to move through them to reach the end.
+Chris Hancock                                                                         10
+
+12/13/2023                    
+
+
+
+  The command center
+
+It is the final room where the player must change gravity twice in order to climb up to the
+
+command module. The player will climb on desks to reach the terminal at the top of the room and
+
+free Father. The desks will be scattered around the room and most will be destroyed.
+Chris Hancock                                                                             11
+
+12/13/2023                              
+
+User interface
+
+The main menu will be as follows
+
+The credits will be a static list
+         In normal gameplay the ui will be nonexistent similar to celeste's presentation
+Chris Hancock                                                                   12
+
+12/13/2023                
+
+  When paused, the screen will be dimmed but still visible with the choices to return to
+
+game, options, or exit to menu in white letters in the middle of the screen.
+
+         Options lets you see descriptions of your movement and combat abilities and their
+keybind, with an option to rebind the keys. The main menu will be a drawing of the tower. Start,
+options, and exit game will appear in white.
+
+Cutscenes
+
+  During cutscenes, the game will freeze and the music will slow down and be pitch shifted.
+
+The closed captions will appear at the bottom of the stage, with black text indicating Rayne and
+
+red text indicating the mysterious voice. The intro cutscene will be different in that it will be a
+
+text crawl similar to the star wars intro being narrated by Rayne. Each cutscene should never
+
+exceed 30 seconds and be able to be skipped by pressing esc.
+
+  Speedrun timer
+
+  During gameplay a timer will start when start is selected and last until the end of the
+
+game. I don't want to kick people out of the game, but for the demos, we may need to implement
+
+a 10 min time limit so that people can have a smooth playing experience.
+
+Required roles
+
+Role boundaries may be blurred depending on the abilities of the team and the needs of the
+project.
+
+     Programers
+Chris Hancock                                                                     13
+
+12/13/2023                         
+
+ 1 head programmer responsible for keeping comment discipline and organizing the
+
+               pseudocode for each programmer to implement.
+
+ 1-2 asset programmers. Responsible for sfx implementation, volume mixing, and
+
+               looping. Also responsible for art importation and implementation.
+
+ 2-3 physics/main character programers. Most important role. They will make sure
+
+               the mag-switch works and that the game feels good to play.
+
+ 1-2 UI programmers. Will program the user interface mostly menu and cutscenes.
+
+ 1-2 level element programers. Will be responsible for making level elements
+
+               function and will work closely with asset programers.
+
+ Artists
+
+ 1-2 character artists
+
+ 1-2 level element artists. Responsible for making the level element art assets
+
+ 1-2 background artists. Responsible for background and foreground assets in the
+
+               level. Need to make some assets repeatable to speed up the texturing process.
+
+ 1 ui artist. Will design the ui and work closely with the ui programer. (may be ui
+
+               programer)
+
+ Level designers (3-6). This role will be a collaborative effort from people across
+
+               the whole team. I will pull my weight coming up with stage ideas but part of the
+
+               fun is showing the diversity of thought by having lots of people work on making
+
+               and refining the rooms and coming up with puzzle ideas.
+
+ Music and sfx
+
+ 1-2 OST composer-Chris Hancock
+
+ 1-2 Sfx artists
+
+ Writers and actors
+
+ 1 actors (Me)
+
+ 1-2 Writers (probably just me or if someone joins they can write dialogue).
+
+Total : 10-15
+Chris Hancock                                             14
+
+12/13/2023                
+
+Moodboard
+
+https://www.pinterest.com/dragongamer4/the-heavens-fall/
+
+Music
+
+The soundtrack to arise will partially be composed by the time production starts. It will consist of
+3 tracks, 1 main menu theme on piano, A fanfare that will play during the first cutscene, and a
+stage theme that will play during most of the level with a full metal band. Linked below are
+samples. If another musician wants to join I won't turn them down but they will work on either a
+credits theme or as a guest on my composition.
+
+Stage theme https://youtu.be/wGsnaqqCYhM
+Intro cutscene theme https://youtu.be/9ZVJJNEQdLA
+Main menu theme https://youtu.be/pfvbxmOAZg8
+Chris Hancock                   15
+
+12/13/2023                
+
+Sound Design
+
+There will be running, jumping, mag-switch, a unique landing sound for each area, a death sound,
+and some sound effects unique to the cutscenes.
+
+Schedule
+
+    Heaven's fall schedule
+
+Goals for each milestone.
+
+    1. Have the game in playable state with core mechanics working and 2 rooms built. Spikes
+         excluded. Have finished sprites but relatively lackluster animations.
+
+    2. Have all main features including death, respawn, checkpoints in the game and 4 rooms
+         implemented. Have working animations for everything but mag-switch, have working intro
+         cutscene.
+
+    3. Have all features implemented and all animations done. Have cutscenes 1-3 done. Have
+         the full mvp done and make the game have a functional ending.
+
+    4. Ideally we have everything in the game doc in the final game.
+

@@ -1,0 +1,525 @@
+Chris Hancock                     1
+
+5/29/2023                   
+
+Let The Heavens Fall RPG
+
+Unity
+
+(Quick Note: Green highlighted text is core features, yellow highlighted text is polish).
+
+Genre
+
+Let the Heavens Fall is an RPG with fighting game elements sprinkled in. It has the overworld
+exploration and presentation of a late 90s j-rpg and the combat mechanics of a fighting game.
+
+Mechanics
+         The main selling point of the game is the combo mechanic. This allows players to create
+
+their own special attacks and gives them the freedom that classic RPG games lack. The combo
+duration is governed by the combo gauge. This depletes at a constant rate whenever the opponent
+is not in hit stun and by a small amount that varies between attacks. There will be no rng involved
+in the combat system whatsoever, the player will live and die by their own skill and preparation.
+For players with less skill who are less skilled or able, we will make auto combos that are
+unlocked through leveling up. Much like Paper Mario or the Mario and Luigi series, all enemy
+attacks can either be dodged or blocked to reduce or completely mitigate all damage. A block
+button is vital to this, and a Perry mechanic may be implemented as a stretch goal. The overworld
+will contain basic cardinal movement, with more advanced options such as jumping, using
+weapons to interact with the environment, and diagonals possibly being added as stretch goals. I
+want to make this game take up the least of the player's time possible so the party will be healed
+fully after each encounter and fleeing a fight will work every time and reset your consumable
+items to before you initiated the fight.
+
+                                                  Gameplay Loop
+         The main gameplay loop is driven by the story and world. The player will have to explore
+their area and defeat the required enemies in combat in order to progress. Along the way, they
+will level up to get new automatic combos, find new equipment and weapons (along with different
+weapon types that change up the play-style of characters), and unlock new characters. Each
+mandatory story boss will give a health upgrade and will be the only way to increase your hp pool.
+Chris Hancock                                                                             2
+
+5/29/2023                                            
+
+This is because I have found that doing optional content in RPGs often results in a less
+
+challenging and memorable boss fight than rushing straight toward a boss. This method makes
+
+balance much easier since each player will approach the late-game bosses with the exact same
+
+amount of health. Mandatory equipment and upgraded main weapons will be dropped after every
+
+major boss as well so that minimalists will not be punished but more powerful items will be
+
+sprinkled around the world to reward exploration.
+
+1. The player receives information from the main story to go somewhere or do something.
+2. The player will have to explore the overworld in order to figure out how to accomplish
+
+    their task through environmental storytelling.
+3. The player moves around the overworld exploring until they find something of interest
+
+    (e.g. a cave, house, hill they can climb or enemy to fight)
+4. The player initiates a fight with the opponent and enters battle mode.
+5. Depending on the type of encounter, the player gets to act first or is ambushed and has to
+
+    face an attack. Acting gives the player the choice to attack, combo, item, or flee. Item lets
+    the player use a one-time consumable which may heal them, give them a buff, or special
+    attack when pressed in attack or combo.
+6. Once the player has finished their turn they will have to defend from enemy attacks some
+    blocked and some dodged.
+
+Art design
+The graphics will use a 3d environment with 2d pixel art for the characters in a similar vein to
+Xenogears, Octopath traveler, generation 4 and 5 Pokemon, and Star Ocean. The aesthetic I am
+going for in this game is to blend medieval fantasy with hard sci-fi using concepts such as O'neal
+cylinders, and mech suits. I want the technology in the game to feel like an actual engineer
+designed it rather than a piece of art while still maintaining some artistic elements such as color
+theory to match the characters and factions that use them.
+
+                                                   Level design
+The demo level will at first be a medieval society with technology reflecting that era. However,
+before the boss fights, the player will walk into a second room that was once the control room for
+Chris Hancock                                                   3
+
+5/29/2023                                                 
+
+the habitat back when it was an Exodus Ship. The area will go from primitive to ultra-futuristic
+
+with a map of the whole Exodus ship and planet below on the back wall (more likely a wire frame
+
+of the Exodus if we do it at all). The areas will be open zone, with more of the surface world and
+
+other exodus habitats being unlocked as the story progresses. The exodus habitats will use a
+
+non-euclidian map with it repeating left to right while the surface will use a spherical map for
+
+fast travel and aerial traversal. The world will be designed in such a way that there will always be
+
+a main setpiece for an area that will be visible from almost any point on the map, and other
+
+smaller setpieces that contain other points of interest.
+
+The scope of the demo is going to be the confrontation at the castle between Cain and John, and
+the mech fight after if time allows. Everything else in the space habitat is subject to stretch if we
+are able to do an exceptionally fast development cycle for this though the most I envision getting
+done realistically is a model of the exterior to put on the title screen and use as a prop in the
+command room.
+
+User interface
+The goal of the UI in the overworld is to be as unintrusive as possible while giving the proper
+information to the player for any given situation. The minimap will be visible in the top right
+corner at all times with triangles at the edge for objectives if the player chooses to enable them.
+Since the player's health will be refilled between every battle and experience only affects auto
+combos, this will be the only thing that shows up on the overworld. It will also show enemies so
+the player knows when an encounter will happen and to avoid it if they wish. Other than that the
+overworld ui will simply show the gameplay. The battle UI will show the health of your characters
+and the health of the boss as well as the combo gauge and the finisher gauge as well. The
+character health bars will be circular like a clock on the top left of the screen but the boss will
+have a linear health bar in the top middle.
+
+Narrative
+Chris Hancock                          4
+
+5/29/2023                        
+
+The game takes place 11,000 years in the future in an alien world and the orbiting space habitats
+
+after a cataclysm that killed all sentient life in the Galaxy. The inhabitants of this world are
+
+descendants of humans grown from genetic material from the Genesis system created by the
+
+artificial intelligence Leviticus. The demo takes place in a space habitat orbiting the planet one of
+
+the Exodus fleet spaceships constructed before the fall of humanity. The main character Paul is a
+
+teenager who runs away from his parents and falls into a hole in the habitat he lives in. Inside, he
+
+finds the lush soil has given away to metal and wires. He finds a device that holds a backup of the
+
+man who defeated the aliens oppressing humanity and who caused the cataclysm that ended the
+
+cycle of gods. The machines in the cavern suddenly come to life and attach a device to Paul's
+
+brain stem. When he comes to, he meets John, a military veteran and former knight of the
+
+"second law" faction who is searching for the man contained in the device. The ai Leviticus is
+
+amassing an army to enact revenge on the knight of the second law and build itself a new body.
+
+John and Paul try to get back to their spaceship, but John is notified that it has been destroyed.
+
+Seeing no other option, they make their way to the king's palace and plan to bargain with him to
+
+use an emergency spacecraft to get to the surface. They arrive at the palace and are greeted with
+
+the place in disorder and completely vacant. The goal is to figure out what happened in the palace
+
+and defeat the Levites (Leviticus army). The leader of the Levites is Cain, the brother of John who
+
+was left behind during a skirmish between the Second Law and the kingdom of Jeherico. Seeking
+
+revenge they engage in a heated battle. After being disarmed Cain summons his mech, and a
+
+second battle ensues.
+
+Goal
+
+The goal of the game is for the player to kill the members of the enemy faction and save the king.
+To drain their opponent's hp before they drain yours. The demo will have 3 fights in it.
+
+The goal of this game is for the player to use their character's unique tools in combination with
+their assist character to defeat their opponent. The player can explore the nuances of each
+character to develop new strategies and techniques to gain advantages over their opponents. The
+Chris Hancock                             5
+
+5/29/2023                           
+
+player can also utilize the assist system in order to enhance their offensive potential. Each player
+
+wants to win two rounds against their opponent. Rounds are won by depleting the opponent's
+
+health to zero.
+
+Controls
+
+Let the Heavens Fall will be played with a keyboard or controller. Let the Heavens Fall uses a grid
+system of movement similar to Pokemon to traverse the overworld. The player is able to move in
+the four cardinal directions during overworld gameplay. The main selling point of this game lies in
+its combat. The game functions like a traditional turn-based RPG except for one feature, the
+COMBO mechanic. This turns the game into a 2D fighting game for a turn and allows the player to
+start a combo. The shift key will allow the player to activate a character's special ability. For Paul,
+this is to slow down time (we just cut velocity, acceleration, and maximum speed temporarily and
+multiply it when the special ability is over). And for John, it is an air dash that allows him to
+extend combos.
+
+          Action        Key/Button              Description
+           Left               A
+                                       The character will move left
+          Right               D       both in the overworld and in
+
+          Jump             Space                  combos.
+
+                                      The character will move right
+                                      both in the overworld and in
+
+                                                  combos.
+
+                                      The character will jump, can
+                                      jump over attacks, or be used
+
+                                        for movement in specific
+                                       instances in the overworld
+Chris Hancock                                 6
+
+5/29/2023                               
+
+Down                           S          The character will move down
+                                          in the overworld and fast fall
+                                          in combos, this allows certain
+
+                                             combos to be extended.
+
+Attack 1                       U          The character performs an
+Attack 2                       J          attack with their primary
+
+                                                     weapon.
+
+                                            The character performs an
+                                           attack with their secondary
+                                           weapon. secondary attacks
+                                          usually have more startup but
+
+                                              more range and power.
+
+Combo finisher                 I          The character performs an
+                                          attack that ends the combo
+                                          but deals massive damage.
+
+Special ability                Shift      The effects of this vary from
+                                          character to character but
+                                          this allows them to perform a
+                                          special action that helps with
+                                          combos.
+
+Aesthetics and Influences
+Chris Hancock                   7
+
+5/29/2023                 
+Chris Hancock                   8
+
+5/29/2023                 
+Chris Hancock                   9
+
+5/29/2023                 
+
+Mechanics
+
+While the controls have already been explained, it is important for me to properly dissect the
+mechanics of the game. Fighting games are a legacy genre with several rich mechanics, so it is
+important to highlight the specifics of how each mechanic will work. (Please remember that when
+I say left or right, it is under the presumption that the player character is facing towards the
+right.)
+
+Movement
+
+Skip, (John only): done by pressing shift, works in 8 directions
+Chris Hancock                   10
+
+5/29/2023                 
+
+Jumping: Performed by hitting up. The player will jump into the air. There will be a very short
+window before the jump where the player is vulnerable. This is called pre-jump. Every character
+can also perform a double jump by hitting up again while in the air. A double jump cannot be
+performed if the player has already executed an airdash.
+
+Attacking and Offense
+
+Assist: Performed by hitting the R1 button. The assist will switch your player-controlled character
+and attack in order to extend the combo. The assist will cycle clockwise from the party setup
+depending on who you picked for the start of the fight. The player will be forced to switch to the
+next character no matter what at the end of the round.
+Combo finishers: Strong attack
+
+Highs, Mids, and Lows: The three types of attacks each normal and special can be. Whether or not
+a move is a low, mid, or high is very important because it determines how the opponent can block
+each move. Lows can be blocked by crouching blocking only. If the opponent is standing up, they
+are susceptible to lows. Mids can be blocked while crouching or standing. If the opponent is
+holding  or  (left or back left, respectively). High can be blocked by stand blocking only. If the
+player is crouching, they are susceptible to highs.
+
+Defense
+
+Blocking: Defends the player from damage. Performed by holding either left or down left ( or 
+respectively). Down left allows the player to crouch block. This will defend them from lows and
+mids. Left allows the player to stand block. This defends them from mids and highs. If the player
+is not stand blocking while holding back, they will simply walk backwards.
+Chris Hancock                   11
+
+5/29/2023                 
+
+Meters and Gauges
+
+Health: The amount of health that each player has. Health is depleted by attacking the opponent
+with attacks. Once damage is dealt, it cannot be undone in that battle. Any health lost is lost
+permanently until the next fight.
+
+Combo finisher gauge: this builds up as you land hits on the opponent. There is a tradeoff because
+this guage is based off of hits so the weaker multi hit combos are better at building this gauge
+than the stronger combos with fewer hits.
+
+Characters
+
+Let the Heavens Fall will have a cast of two different characters for the demo.
+
+                                               John
+
+Overview: John is a military veteran and a knight of the Second Law. He fights with a gun and
+knife as his primary and secondary weapons. The second style of combat is with a
+bayonet-equipped rifle, He cannot mix and match his primary and secondary weapons.
+Chris Hancock                    12
+
+5/29/2023                  
+
+Design Concept:
+
+Just make him physically imposing and bulkier than the other characters.
+
+Standing Normals
+
+5A: Chuck whips his chain forward. Move has a somewhat slow startup and recovery, but has
+excellent range. Good for catching opponents trying to jump or throw a projectile. Not self
+cancellable.
+5B: Chuck does a pushkick. Chuck's fastest normal, and one of only three of his normals that
+don't involve his limbs. Safe, low commitment poke that leads into decent reward on hit.
+5C: Chuck does an overhanded slam with his chain. Despite its appearance, it's not an overhead.
+Slightly faster than his 5A but with much more recovery if whiffed. Luckily it has excellent range
+which makes it difficult to whiff.
+
+Crouching Normals
+Chris Hancock                                                                               13
+
+5/29/2023                                                   
+
+2A: Chuck does a low kick. Not self cancellable. Has decent range for a light normal but is slower
+
+than the average light normal.
+
+2B: Chuck sweeps the floor with his chain. Covers a decent area in front of him and has decent
+
+startup and recovery for a medium attack. This attack knocks down on hit.
+
+(Sidenote about 2B: Every character's 2B knocks down on hit. When a character is knocked down,
+
+they will be temporarily airborne before falling on the ground. They will stay on the ground for a
+
+short time before standing back up. Every 2B is also low).
+
+2C: Chuck does a rising uppercut from a crouching position. Chuck's dedicated anti air button.
+
+Jumping Normals
+
+j.A: Chuck quickly throws his chain downward. Very fast air normal with very low hitstun. Strong
+
+instant overhead attack.
+
+j.B: Chuck does a fast stomp with his right foot. His best jump in attack.
+
+j.C: Chuck throws out both of his chains horizontally. Great for catching jumping opponents.
+
+Specials
+
+Metal Snake (214C): Chuck enters a stance where he readies his left arm. Letting go of the C
+
+button will end the stance, and holding it will keep the stance. Pressing 6A while in the stance
+
+will launch his chain upward, while pressing 6B will launch the chain downward.
+
+Chain Link Crasher (623B): Chuck does an overhead swing, knocking down the opponent. Beats
+
+low blocking.
+
+Lobotomizer (63214): Chuck grabs the opponent's neck and headbuts them. Is a command grab.
+
+Assist Moves
+
+4S: Metal Snake High, 5S: Chain Link Crasher, 6S: Metal Snake Low
+
+                                    Paul
+
+Overview: Paul is a brawler and most of his moveset is based on the Korean martial art
+taekwondo. I have experience in taekwondo and it has a lot of very flashy kicks in it. The
+
+Specials
+Chris Hancock                                                          14
+
+5/29/2023                      
+
+                      Georgia
+
+Overview: Georgia is a swordfighter who uses her range to keep combos going when another
+character otherwise would not be able to. She will be able to exchange her single sword for dual
+swords that have better frame data, deal more hits but deal less overall damage.
+
+                                                 Design Concept:
+
+                  Rip off aeowin from lotr but make her hair black.
+Chris Hancock                                               15
+
+5/29/2023                 
+
+                  (Turn the horniness down on this one.)
+
+Standing Normals
+
+5A: Burnz throws a left jab. Very standard, not much else to say about it.
+5B: Burnz throws a side kick. Covers the range in front of and slightly above Burnz. Good ground
+poke that can also stop low jumps.
+5C: Burnz throws a roundhouse. Good mix of power, range, and speed. Good anti air. Move will
+whiff on crouching opponents. Doesn't hit opponents that are directly above Burnz.
+
+Crouching Normals
+
+2A: Burnz does a short ranged crouching kick. Low attack that is self cancellable. Very fast with
+decent range for 2A.
+2B: Burnz does a sweep kick. Very standard sweep that knocks down on hit.
+2C: Burnz does a rising uppercut. Has a vertical hitbox that is very good for anti air.
+
+Jumping Normals
+
+j.A: Burnz does a two hit, short ranged uppercut mid air. Good air to air for opponents that are
+above Madd Burnz.
+j.B: Burnz does an aerial sidekick that is angled downwards. Good jump in attack that can also
+cross up the opponent, meaning that there is a hitbox behind the move that forces the opponent
+to guess whether they should block left or right.
+j.C: Burnz does a divekick. He stalls for a moment in the air before quickly thrusting himself
+downwards with a kick. The delayed momentum is good for making the opponent do their anti air
+earlier than normal. This can net you a good punish.
+
+Specials
+
+Ying (236A): Burnz throws a fireball with his legs. Can be done in the air. This is your typical
+hadouken style fireball.
+Pan (214B): Burnz does a leaping spin kick that is followed up by an up kick. This launches the
+opponent in the air which allows for an extended combo. Very punishable if the opponent blocks
+the move.
+Dan Bn (623C): Burnz does a rising uppercut that sends him flying in the air. Very similar to a
+shoryuken. Has invincibility on startup which means it can be used as a reversal.
+Chris Hancock                                     16
+
+5/29/2023                                   
+
+Assist Moves
+
+4S: Pan, 5S: Ying, 6S: Dan Bn
+
+                                   Ringo
+
+Overview: Ringo fights with a club and shield and has an extra jump and a shorter dash than john.
+                                                 Design Concept:
+
+Standing Normals
+
+5A: Uki does a short ranged palm strike. Self cancellable.
+5B: Uki Does a double handed palm strike
+5C: Uki reels her right hand back before launching an even more powerful palm strike.
+
+Crouching Normals
+
+2A: Uki does a crouching version of her 5A. Is the same functionally aside from the position of the
+hitbox. Hits mid.
+2B: Uki sweeps her right foot forward. Range is poor but is also pretty fast. Knocks down on hit.
+2C: Uki quickly raises her palms in the air. Strong vertical hitbox makes it great for anti-air
+opponents who are directly above Uki.
+
+Jumping Normals
+
+j.A: Uki does a downward palm strike with short range. Self cancellable
+j.B: Uki does a downward angle side kick. Has a subpar crossup hitbox.
+j.C: Uki brings both her hands down for a hammer fist attack.
+
+Specials
+
+Shiko (22A): Uki does a sumo stomp that causes a full screen earthquake. If the opponent is
+standing on the floor, they will be knocked down. This attack can be avoided by crouch blocking
+or jumping. If you hold the A button before using this move, it becomes unblockable on the
+ground and deals damage.
+Chris Hancock                                                     17
+
+5/29/2023                                           
+
+Henka (41236B): Uki enters a defensive stance. If the opponent attacks Uki with any physical, non
+
+projectile based attack, she will grab the opponent by the shoulder and toss them behind her. This
+
+will cause a side switch. The opponent will also be put into hitstun which will let Uki follow up
+
+with a combo.
+
+Gaburi-Yori (63214C): Frame 1 command grab, meaning it comes out instantly. Uki first grabs the
+
+opponents waist, and then she picks them up and slams them against the wall. This move will
+
+instantly carry the opponent to the wall even if Uki is on the other side of the screen. After being
+
+slammed against the wall, the opponent will be knocked down.
+
+Assist Moves
+
+4S: Shiko, 5S: Henka, 6S: Shiko with Held Button
+
+Sound Design
+
+My precious.
+
+Potential Schedule/Role
+
+This project will require programmers, pixel and concept artists, a UI designer, a character
+controller developer, 1 programmer for the system mechanics, I can handle all the sound design,
+score, and implementation. I can handle the voice acting too, but others are welcome to try and
+voice other characters if they wish. Below is a potential schedule:
+https://docs.google.com/spreadsheets/d/1fhhOgei4Dipo88ngujoi9Ob2hZP1RTP-MxcRnhxKC7s/edi
+t?usp=sharing
+Chris Hancock                   18
+
+5/29/2023                 
+

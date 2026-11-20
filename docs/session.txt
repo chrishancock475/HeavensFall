@@ -1,0 +1,25 @@
+Session 1 - 2026-11-19
+
+Goals:
+Set up the Heaven's Fall project and record its scope. Pull the Unity project from GitHub, write the SOP
+and CLAUDE.md, list what the prologue (spring 2024 demo) has built against its design doc, and draft how
+the two design docs combine into a metroidvania with the platformer as the prologue.
+
+Dont Break:
+Existing scenes, prefabs, scripts and .meta files. The GitHub remote and its branches (nothing pushed).
+The two design PDFs in docs/.
+
+Done When:
+- Repo cloned on NEW-MAIN (done: 8fb315e).
+- docs/SOP.txt and CLAUDE.md written (done).
+- docs/scope.md has the prologue inventory, the combined design draft and the open questions (done).
+- Local commit made, not pushed (done).
+
+Finished:
+All of the above. Not verified in the Unity editor: tile colour language, mag-switch animation, Cutscene_2
+content. Doc tags (MVP / EXTRA / POLISH) were inferred because the PDF highlights were lost.
+
+Next Session:
+Owner answers the 5 open questions in docs/scope.md Part 3, then pick the milestone. Likely first
+candidate: open the project in Unity 2022.3.19f1, confirm it plays, and close prologue gaps (cutscene skip
+and captions, Cutscene_2 in the build, ending scene, SFX), or start a combat / map prototype branch.
