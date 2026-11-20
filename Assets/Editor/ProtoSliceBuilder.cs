@@ -85,6 +85,12 @@ public static class ProtoSliceBuilder
         spikeMap.transform.localScale = new Vector3(1f, 0.5f, 1f);
         var spikeRows = spikeCells.Select(c => new Vector3Int(c.x, c.y * 2, 0)).ToArray();
         spikeMap.SetTiles(spikeRows, Enumerable.Repeat<TileBase>(spike, spikeRows.Length).ToArray());
+        // Tilemap colliders update lazily; build them now or the saved scene has empty (walk-through) colliders.
+        foreach (var tm in new[] { steelMap, aluMap, spikeMap })
+        {
+            tm.GetComponent<TilemapCollider2D>().ProcessTilemapChanges();
+            tm.GetComponent<CompositeCollider2D>().GenerateGeometry();
+        }
 
         // ---------------------------------------------------------------- player
         Vector2Int start = Find(map, 'P').FirstOrDefault();

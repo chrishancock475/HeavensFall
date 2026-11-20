@@ -28,8 +28,15 @@ Prototype progress (same sitting, 2026-11-19):
 - All prototype code written and committed (5226f4d). It compiles against the Unity DLLs with dotnet,
   but the scene has not been generated and nothing has been play-tested.
 
+Batch build + smoke tests (2026-11-20):
+- Owner activated the Unity license. Proto_Slice.unity generated in batch mode, no compile errors.
+- Fixed: tilemap colliders were saved empty (player fell through the floor). Builder now generates them.
+- Smoke tests (Assets/Tests/PlayMode, results msg/smoke_results.xml): Proto_Slice, Main_menu, Level_2 pass.
+  Level_1 FAILS: Assets/Levels/Level_1.unity has unresolved git merge-conflict markers (lines 264, 8559,
+  14325, 14493), committed upstream in 07f6f98 "Fixed Merge". Pre-existing, not touched yet.
+- The smoke test only idles in each scene; no input is simulated. Feel and techniques are untested.
+
 Next Session:
-1. Owner signs in to Unity Hub and activates a Personal license.
-2. Grok runs, in batch mode: ProtoSliceBuilder.BuildFromCommandLine, then checks the Editor log for errors.
-3. Owner opens Proto_Slice and plays R1 -> Warden -> R7 -> R8 -> R1; note what feels wrong in docs/.
-4. Tune jump/dash numbers against the map (fence staircase in R2, shaft in R3, R5 exit climb).
+1. Owner plays Proto_Slice (open Assets/Levels/Proto/Proto_Slice.unity, press Play) and notes problems.
+2. Decide how to fix the Level_1 merge conflict (pick a side per conflict, or take the version from a branch).
+3. Tune jump/dash numbers against the map (R2 fence staircase, R3 shaft, R5 exit climb).
