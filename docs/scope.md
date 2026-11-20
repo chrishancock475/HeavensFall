@@ -93,12 +93,18 @@ up and the Levites march). How Rayne relates to Paul and John is open (Part 3).
 
 ---
 
-## Part 3 - Open questions for the owner
-1. Who is the playable lead in the main game: Rayne only, or Rayne plus a party (Paul / John / Georgia /
-   Ringo) you switch between, using the RPG doc's assist system?
-2. How deep should combat go: full fighting-game inputs (motion specials, high/mid/low) or a simpler
-   metroidvania set with one or two specials?
-3. Does the prologue stay a linear set of rooms (as built) or become the first area of the connected map?
-4. Do mag-switch tiles keep red and blue literally, or should the colour language be redone in the new art?
-5. What is the target for the next milestone: finish the prologue (Part 1 gaps) first, or prototype
-   combat and a metroidvania map slice?
+## Part 3 - Decisions and open questions
+
+### Decided (owner, 2026-11-19)
+1. **Party:** Rayne plus a party. The RPG doc's party members (Paul / John / Georgia / Ringo) join;
+   switching and assists come from the RPG doc's assist system. Who joins when is still open.
+2. **Combat:** a **simple input set** (no motion-input specials, no full high/mid/low tree) whose depth
+   comes from **advanced combat and movement techniques**: things skilled players discover, such as
+   cancels, momentum carried into attacks, mag-switch surface attacks, dash and jump cancels, and assist
+   or character-switch extensions.
+3. **Next milestone:** a **combat + map prototype slice** (not finishing the prologue first).
+
+### Still open
+4. Does the prologue stay a linear set of rooms (as built) or become the first area of the connected map?
+5. Do mag-switch tiles keep red and blue literally, or should the colour language be redone in the new art?
+6. Which party member is in the prototype slice besides Rayne, and what is their gating ability?

@@ -19,7 +19,9 @@ Finished:
 All of the above. Not verified in the Unity editor: tile colour language, mag-switch animation, Cutscene_2
 content. Doc tags (MVP / EXTRA / POLISH) were inferred because the PDF highlights were lost.
 
+Owner decisions (recorded in docs/scope.md Part 3): Rayne plus a party; a simple combat input set with
+depth from advanced combat and movement techniques; next milestone = combat + map prototype slice.
+
 Next Session:
-Owner answers the 5 open questions in docs/scope.md Part 3, then pick the milestone. Likely first
-candidate: open the project in Unity 2022.3.19f1, confirm it plays, and close prologue gaps (cutscene skip
-and captions, Cutscene_2 in the build, ending scene, SFX), or start a combat / map prototype branch.
+Combat + map prototype slice on a new branch off NEW-MAIN. First step: write docs/prototype_spec.md
+(inputs, combat tech list, one party member, room graph for the slice) and get the owner's OK, then build.
