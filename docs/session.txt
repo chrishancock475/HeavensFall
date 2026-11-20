@@ -1,44 +1,31 @@
-Session 1 - 2026-11-19
+Session 2 - (next sitting)
+
+Previous session: docs/session1.txt (2026-11-19/20).
 
 Goals:
-Set up the Heaven's Fall project and record its scope. Pull the Unity project from GitHub, write the SOP
-and CLAUDE.md, list what the prologue (spring 2024 demo) has built against its design doc, and draft how
-the two design docs combine into a metroidvania with the platformer as the prologue.
+Play-test the combat + map prototype slice and tune it from the owner's notes.
 
 Dont Break:
-Existing scenes, prefabs, scripts and .meta files. The GitHub remote and its branches (nothing pushed).
-The two design PDFs in docs/.
+The prologue scenes (Main_menu, Cutscene_1-3, Level_1, Level_2, End screen) and how they play.
+The 5 passing smoke tests (msg/smoke_results.xml). The GitHub remote: nothing pushed without the owner's OK.
 
 Done When:
-- Repo cloned on NEW-MAIN (done: 8fb315e).
-- docs/SOP.txt and CLAUDE.md written (done).
-- docs/scope.md has the prologue inventory, the combined design draft and the open questions (done).
-- Local commit made, not pushed (done).
+- Owner has played Proto_Slice R1 -> Warden -> R7 -> R8 -> R1 and written notes (docs/playtest_1.md).
+- The blocking problems in those notes are fixed (map spots most at risk: R2 fence staircase, R3 shaft,
+  R5 exit climb), the slice is rebuilt and the smoke tests pass.
 
-Finished:
-All of the above. Not verified in the Unity editor: tile colour language, mag-switch animation, Cutscene_2
-content. Doc tags (MVP / EXTRA / POLISH) were inferred because the PDF highlights were lost.
+State at the end of session 1:
+- Branch proto/combat-slice (local, not pushed), latest 7680190. It contains origin/test-2 (Apr 29 2024
+  final demo) merged in, which fixed the broken Level_1 from NEW-MAIN's bad merge 07f6f98.
+- Unity 2022.3.19f1 installed and licensed. Batch build + smoke test commands are in docs/SOP.txt.
+- Prototype slice: Assets/Levels/Proto/Proto_Slice.unity, built from tools/gen_proto_map.py via
+  Heaven's Fall > Build Prototype Slice. Spec: docs/prototype_spec.md (section 12 lists deviations).
+- Not yet tested by a person: combat feel, the 8 techniques, jump/dash distances, room cameras.
 
-Owner decisions (recorded in docs/scope.md Part 3): Rayne plus a party; a simple combat input set with
-depth from advanced combat and movement techniques; next milestone = combat + map prototype slice.
-
-Prototype progress (same sitting, 2026-11-19):
-- Spec approved (shared HP, damaging spikes, RPG keys U/J/I/Shift/O). Branch proto/combat-slice.
-- Grok installed Unity 2022.3.19f1 and .NET SDK 8.0.428. Unity is NOT licensed yet (owner must sign in).
-- All prototype code written and committed (5226f4d). It compiles against the Unity DLLs with dotnet,
-  but the scene has not been generated and nothing has been play-tested.
-
-Batch build + smoke tests (2026-11-20):
-- Owner activated the Unity license. Proto_Slice.unity generated in batch mode, no compile errors.
-- Fixed: tilemap colliders were saved empty (player fell through the floor). Builder now generates them.
-- Smoke tests (Assets/Tests/PlayMode, results msg/smoke_results.xml): Proto_Slice, Main_menu, Level_2 pass.
-  Level_1 failed on git conflict markers from 07f6f98 "Fixed Merge" on NEW-MAIN.
-- FIXED by merging origin/test-2 (the Apr 29 2024 final demo line, which NEW-MAIN never got) into
-  proto/combat-slice (54c156d). Level_1/Level_2/Main_menu = test-2 versions. All 5 smoke tests pass.
-- NOTE: GitHub NEW-MAIN is stale and still broken. The real latest demo is origin/test-2.
-- The smoke test only idles in each scene; no input is simulated. Feel and techniques are untested.
+Open decisions for the owner:
+1. GitHub: NEW-MAIN (default branch) is stale and still broken; test-2 is the real latest demo.
+   Make proto/combat-slice or test-2 the default, or merge into NEW-MAIN (needs a push).
+2. scope.md Part 3 still open: does the prologue stay linear or join the map; keep literal red/blue tiles?
 
 Next Session:
-1. Owner plays Proto_Slice (open Assets/Levels/Proto/Proto_Slice.unity, press Play) and notes problems.
-2. Decide what to do on GitHub: make test-2 (or this branch) the default branch, or fix NEW-MAIN. Needs a push.
-3. Tune jump/dash numbers against the map (R2 fence staircase, R3 shaft, R5 exit climb).
+Start with the owner's play-test of Proto_Slice, then tune.
