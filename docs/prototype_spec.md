@@ -1,6 +1,6 @@
 # Prototype spec - combat + map slice
 
-Status: **DRAFT, waiting for owner approval.** No code until approved.
+Status: **APPROVED 2026-11-19** (shared HP, spikes deal damage, RPG key layout).
 Branch: `proto/combat-slice` off `NEW-MAIN`. Unity 2022.3.19f1.
 Decisions this builds on: `docs/scope.md` Part 3 (Rayne + party, simple inputs with deep tech, John joins,
 all rooms in one scene).
@@ -16,7 +16,7 @@ Prove three things in about 10 minutes of play:
 |---|---|---|
 | Role | fast, technical, surfaces | heavier hits, air control |
 | Mag-switch | yes (existing) | **no** (no mag boots, falls off steel) |
-| Movement ability | time slow (Shift, meter) | **air dash**, 8 directions, 1 per airtime |
+| Shift ability | time slow (meter) | **air dash**, 8 directions, 1 per airtime |
 | Attack string | 3-hit knife string, short range | 2-hit rifle-butt string, longer range, more knockback |
 | Special | **Mag Pulse**: short-range push; on steel it launches Rayne off the wall | **Bayonet Lunge**: forward lunge that passes through enemies |
 | Assist (partner called in) | Mag Pulse at the target | Bayonet Lunge at the target |
@@ -27,21 +27,22 @@ Prove three things in about 10 minutes of play:
 - Swap happens instantly in place: the same Rigidbody, a different character profile (tuning, moveset,
   sprite).
 
-## 3. Inputs (keyboard; controller mapped the same way)
+## 3. Inputs (RPG doc layout, owner decision 2026-11-19; controller mapped the same way)
 | Action | Key | Notes |
 |---|---|---|
-| Move | WASD / arrows | existing axes |
+| Move | A / D (W / S on walls) | existing axes |
 | Jump | Space | existing |
+| Fast fall | S in the air | from the RPG doc; extends air combos |
 | Super jump | M | existing; in the slice gated by an ability flag instead of `GameManager.LEVEL` |
-| Attack | J | direction plus Attack: neutral, up (launcher), down in the air (pogo) |
-| Special | K | per character |
-| Dash | L | John only (Rayne: no effect, or a short ground roll if testing wants it) |
-| Swap / Assist | Q | tap = swap; hold 0.25 s = call the partner in for one assist attack (cooldown) |
-| Time slow | Left Shift | Rayne only; drains a meter, hits refill it |
+| Attack 1 (light) | U | direction plus U: neutral string, up = launcher, down in the air = pogo |
+| Attack 2 (heavy / special) | J | per character: Rayne Mag Pulse, John Bayonet Lunge; more startup, more range |
+| Combo finisher | I | needs a full combo gauge; ends the combo with a big hit |
+| Special ability | Left Shift | Rayne: time slow (drains a meter). John: 8-way air dash (1 per airtime, i-frames) |
+| Swap / Assist | O | tap = swap; hold 0.25 s = partner assist attack (cooldown). RPG doc used R1 |
 | Pause | Esc | existing |
 
-No motion inputs and no block button. Defence comes from dash i-frames (John) and mag-switch repositioning
-(Rayne). Every enemy attack is telegraphed, and none use randomness (RPG doc pillar).
+No motion inputs and no block button. Defence comes from John's dash i-frames and Rayne's mag-switch
+repositioning. Every enemy attack is telegraphed, and none use randomness (RPG doc pillar).
 
 ## 4. Advanced techniques (the depth)
 Target for the slice: **at least 4 working**, in priority order. Each one gets a dedicated test room or
@@ -62,12 +63,12 @@ spot in the map.
 8. **Launcher into air combo:** an up attack launches light enemies; you follow with a jump cancel.
 
 ## 5. Progression in the slice
-- **Combo gauge** (from the RPG doc's finisher gauge): fills per hit, more from many-hit strings. In the
-  slice it only refills time slow and the assist cooldown. A finisher move is a stretch goal.
+- **Combo gauge** (from the RPG doc's finisher gauge): fills per hit, more from many-hit strings. When
+  full, I fires the character's finisher and empties it. Hits also refill Rayne's time-slow meter.
 - **HP:** starts at 5. The mini-boss drops **+1 HP** (the only HP source, per the RPG doc).
 - **Save points:** full heal, set respawn. Death respawns at the last save point with full HP.
-- **Spikes:** 1 damage and you are put back at the last safe ground in the room (not a one-hit kill in
-  the full game; the prologue keeps one-hit kills).
+- **Spikes:** 1 damage, knockback away from the spike, 1 s of invulnerability. No teleport. (The prologue
+  keeps its one-hit kill and respawn.)
 
 ## 6. Enemies (all deterministic)
 | Enemy | Behaviour | Teaches |
@@ -131,10 +132,10 @@ Art: placeholders. John uses Rayne's sprite tinted until real art exists; hitbox
 
 ## 10. Out of scope for the slice
 Real art and animation, sound effects, cutscenes, the other party members, save files on disk,
-controller rebinding, the finisher move (stretch only).
+controller rebinding.
 
-## 11. Questions for the owner (can be answered while building)
-1. Is "John has no mag-switch" right? It is the main reason to swap.
-2. Shared HP pool for the party, or separate HP per character?
-3. Should spikes stay one-hit in the main game, or deal damage and return you to safe ground (as above)?
-4. Are J / K / L / Q fine, or do you want the RPG doc's U / J / I layout?
+## 11. Owner answers (2026-11-19)
+1. John has no mag-switch: accepted as written.
+2. HP: one shared party pool.
+3. Spikes: deal damage only (section 5).
+4. Keys: the RPG doc layout (section 3).
