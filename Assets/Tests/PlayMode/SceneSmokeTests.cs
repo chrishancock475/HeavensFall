@@ -23,6 +23,7 @@ public class SceneSmokeTests
     [UnityTest] public IEnumerator MainMenuRuns() { yield return Load("Main_menu", 2f); }
     [UnityTest] public IEnumerator Level1Runs() { yield return Load("Level_1", 4f); }
     [UnityTest] public IEnumerator Level2Runs() { yield return Load("Level_2", 4f); }
+    [UnityTest] public IEnumerator EndScreenRuns() { yield return Load("End screen", 2f); }
 
     static IEnumerator Load(string scene, float seconds)
     {

@@ -30,5 +30,9 @@ Session start
 3. Wait for the owner's OK before changing anything.
 
 Verification
-- Claude cannot run the Unity editor here. Anything that needs play-testing or a build is either
+- Unity 2022.3.19f1 is installed (licensed). Batch commands, run from the project folder:
+    rebuild slice:  Unity.exe -batchmode -quit -projectPath . -executeMethod ProtoSliceBuilder.BuildFromCommandLine -logFile msg/unity_build.log
+    smoke tests:    Unity.exe -batchmode -projectPath . -runTests -testPlatform PlayMode -testResults msg/smoke_results.xml -logFile msg/unity_smoke.log
+  The Unity editor must be closed while these run. Smoke tests only idle in each scene; they do not test feel.
+- Claude cannot play the game. Anything that needs play-testing or a build is either
   handed to the owner or to Grok (buddy ask grok ...) with exact steps and a log file in the project.

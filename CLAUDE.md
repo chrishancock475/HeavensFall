@@ -10,7 +10,10 @@ Key code
 - `Assets/Scripts/PlayerMovement.cs`: running, jumping, mag-switch surface walking (`surface`, `MagSwitch`),
   super jump (gated by `GameManager.LEVEL > 1`), Shift = time slow (timeScale 0.5), `Die()`.
 - `Assets/Scripts/GameManager.cs`: static checkpoint, level-end event, Cinemachine blend override.
-- Scenes in build: Main_menu, Cutscene_1, Level_1, Level_2 (Cutscene_2 exists but is not in the build list).
+- Scenes in build: Main_menu, Cutscene_1-3, Level_1, Level_2, End screen, Proto_Slice.
+- Branches: origin/test-2 is the final Apr 2024 demo; GitHub NEW-MAIN is stale (broken Level_1 merge).
+  Work happens on proto/combat-slice, which merges test-2.
+- Checks: Unity batch smoke tests, see docs/SOP.txt.
 
 Rules
 - Do not push to GitHub or touch remote branches without the owner's OK.

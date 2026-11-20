@@ -32,11 +32,13 @@ Batch build + smoke tests (2026-11-20):
 - Owner activated the Unity license. Proto_Slice.unity generated in batch mode, no compile errors.
 - Fixed: tilemap colliders were saved empty (player fell through the floor). Builder now generates them.
 - Smoke tests (Assets/Tests/PlayMode, results msg/smoke_results.xml): Proto_Slice, Main_menu, Level_2 pass.
-  Level_1 FAILS: Assets/Levels/Level_1.unity has unresolved git merge-conflict markers (lines 264, 8559,
-  14325, 14493), committed upstream in 07f6f98 "Fixed Merge". Pre-existing, not touched yet.
+  Level_1 failed on git conflict markers from 07f6f98 "Fixed Merge" on NEW-MAIN.
+- FIXED by merging origin/test-2 (the Apr 29 2024 final demo line, which NEW-MAIN never got) into
+  proto/combat-slice (54c156d). Level_1/Level_2/Main_menu = test-2 versions. All 5 smoke tests pass.
+- NOTE: GitHub NEW-MAIN is stale and still broken. The real latest demo is origin/test-2.
 - The smoke test only idles in each scene; no input is simulated. Feel and techniques are untested.
 
 Next Session:
 1. Owner plays Proto_Slice (open Assets/Levels/Proto/Proto_Slice.unity, press Play) and notes problems.
-2. Decide how to fix the Level_1 merge conflict (pick a side per conflict, or take the version from a branch).
+2. Decide what to do on GitHub: make test-2 (or this branch) the default branch, or fix NEW-MAIN. Needs a push.
 3. Tune jump/dash numbers against the map (R2 fence staircase, R3 shaft, R5 exit climb).

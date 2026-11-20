@@ -1,51 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-20 04:59:49Z" end-time="2026-11-20 05:00:09Z" duration="19.8301143">
-  <test-suite type="TestSuite" id="1000" name="Heaven's fall" fullname="Heaven's fall" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-20 04:59:49Z" end-time="2026-11-20 05:00:09Z" duration="19.830114" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-20 05:06:55Z" end-time="2026-11-20 05:07:35Z" duration="40.1285657">
+  <test-suite type="TestSuite" id="1000" name="Heaven's fall" fullname="Heaven's fall" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-20 05:06:55Z" end-time="2026-11-20 05:07:35Z" duration="40.128566" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties />
-    <failure>
-      <message><![CDATA[One or more child tests had errors]]></message>
-    </failure>
-    <test-suite type="Assembly" id="1006" name="SmokeTests.dll" fullname="C:/Users/drago/Documents/heavens fall full game/heavens fall/Library/ScriptAssemblies/SmokeTests.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-20 04:59:49Z" end-time="2026-11-20 05:00:09Z" duration="19.822556" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1007" name="SmokeTests.dll" fullname="C:/Users/drago/Documents/heavens fall full game/heavens fall/Library/ScriptAssemblies/SmokeTests.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-20 05:06:55Z" end-time="2026-11-20 05:07:35Z" duration="40.121469" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="26480" />
+        <property name="_PID" value="41932" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <failure>
-        <message><![CDATA[One or more child tests had errors]]></message>
-      </failure>
-      <test-suite type="TestFixture" id="1001" name="SceneSmokeTests" fullname="SceneSmokeTests" classname="SceneSmokeTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-20 04:59:49Z" end-time="2026-11-20 05:00:09Z" duration="19.820546" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1001" name="SceneSmokeTests" fullname="SceneSmokeTests" classname="SceneSmokeTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-20 05:06:55Z" end-time="2026-11-20 05:07:35Z" duration="40.119641" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <failure>
-          <message><![CDATA[One or more child tests had errors]]></message>
-        </failure>
-        <test-case id="1004" name="Level1Runs" fullname="SceneSmokeTests.Level1Runs" methodname="Level1Runs" classname="SceneSmokeTests" runstate="Runnable" seed="1539452586" result="Failed" start-time="2026-11-20 04:59:49Z" end-time="2026-11-20 04:59:54Z" duration="4.352893" asserts="0">
+        <test-case id="1006" name="EndScreenRuns" fullname="SceneSmokeTests.EndScreenRuns" methodname="EndScreenRuns" classname="SceneSmokeTests" runstate="Runnable" seed="1633818903" result="Passed" start-time="2026-11-20 05:06:55Z" end-time="2026-11-20 05:06:57Z" duration="2.279422" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
           </properties>
-          <failure>
-            <message><![CDATA[Unhandled log message: '[Error] The file 'Assets/Levels/Level_1.unity' seems to have merge conflicts. Please open it in a text editor and fix the merge.
-'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
-            <stack-trace><![CDATA[
-]]></stack-trace>
-          </failure>
-          <output><![CDATA[The file 'Assets/Levels/Level_1.unity' seems to have merge conflicts. Please open it in a text editor and fix the merge.
-
-]]></output>
         </test-case>
-        <test-case id="1005" name="Level2Runs" fullname="SceneSmokeTests.Level2Runs" methodname="Level2Runs" classname="SceneSmokeTests" runstate="Runnable" seed="1154169467" result="Passed" start-time="2026-11-20 04:59:54Z" end-time="2026-11-20 04:59:58Z" duration="4.846031" asserts="0">
+        <test-case id="1004" name="Level1Runs" fullname="SceneSmokeTests.Level1Runs" methodname="Level1Runs" classname="SceneSmokeTests" runstate="Runnable" seed="131648930" result="Passed" start-time="2026-11-20 05:06:57Z" end-time="2026-11-20 05:07:18Z" duration="20.344770" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
           </properties>
           <output><![CDATA[Checkpoint!!
 ]]></output>
         </test-case>
-        <test-case id="1003" name="MainMenuRuns" fullname="SceneSmokeTests.MainMenuRuns" methodname="MainMenuRuns" classname="SceneSmokeTests" runstate="Runnable" seed="2027295066" result="Passed" start-time="2026-11-20 04:59:58Z" end-time="2026-11-20 05:00:01Z" duration="2.344790" asserts="0">
+        <test-case id="1005" name="Level2Runs" fullname="SceneSmokeTests.Level2Runs" methodname="Level2Runs" classname="SceneSmokeTests" runstate="Runnable" seed="197706951" result="Passed" start-time="2026-11-20 05:07:18Z" end-time="2026-11-20 05:07:24Z" duration="6.866055" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[Checkpoint!!
+]]></output>
+        </test-case>
+        <test-case id="1003" name="MainMenuRuns" fullname="SceneSmokeTests.MainMenuRuns" methodname="MainMenuRuns" classname="SceneSmokeTests" runstate="Runnable" seed="1147266978" result="Passed" start-time="2026-11-20 05:07:24Z" end-time="2026-11-20 05:07:27Z" duration="2.349705" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
           </properties>
         </test-case>
-        <test-case id="1002" name="ProtoSliceRunsWithoutErrors" fullname="SceneSmokeTests.ProtoSliceRunsWithoutErrors" methodname="ProtoSliceRunsWithoutErrors" classname="SceneSmokeTests" runstate="Runnable" seed="673900889" result="Passed" start-time="2026-11-20 05:00:01Z" end-time="2026-11-20 05:00:09Z" duration="8.259639" asserts="0">
+        <test-case id="1002" name="ProtoSliceRunsWithoutErrors" fullname="SceneSmokeTests.ProtoSliceRunsWithoutErrors" methodname="ProtoSliceRunsWithoutErrors" classname="SceneSmokeTests" runstate="Runnable" seed="1775887564" result="Passed" start-time="2026-11-20 05:07:27Z" end-time="2026-11-20 05:07:35Z" duration="8.264282" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
           </properties>
