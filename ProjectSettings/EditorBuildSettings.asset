@@ -12,11 +12,20 @@ EditorBuildSettings:
     path: Assets/Levels/Cutscene_1.unity
     guid: 9c13bce94ad787e4287ed1130bc9b083
   - enabled: 1
+    path: Assets/Levels/Cutscene_2.unity
+    guid: b32d2c2d045695b48986afa222a7e420
+  - enabled: 1
+    path: Assets/Levels/Cutscene_3.unity
+    guid: 8a2138d2355b6534496695b02c7ff22b
+  - enabled: 1
     path: Assets/Levels/Level_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Levels/Level_2.unity
     guid: 2962748b348dc164c92f6e182532c39f
+  - enabled: 1
+    path: Assets/Levels/End screen.unity
+    guid: b3f4ee3b2d4b808468dc063680469b31
   - enabled: 1
     path: Assets/Levels/Proto/Proto_Slice.unity
     guid: 19964aaf3a9c2b548996a9993e39afc8

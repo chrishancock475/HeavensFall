@@ -9,6 +9,7 @@ public class CutsceneEnd : MonoBehaviour
     
     VideoPlayer player;
     [SerializeField] string Scene;
+    [SerializeField] int cutscene_length;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class CutsceneEnd : MonoBehaviour
 
     private void Update()
     {
-        if (player.clockTime > 38)
+        if (player.clockTime > cutscene_length)
         {
             SceneManager.LoadScene(Scene);
         }
