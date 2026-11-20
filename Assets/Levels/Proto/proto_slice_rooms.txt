@@ -1,0 +1,9 @@
+# id|name|x0|y0|x1|y1|flags|hint   (interior cells, inclusive, y up)
+R1|Landing|2|2|33|17||U attack (W+U launcher, air S+U pogo)  J heavy  I finisher  Shift time slow  Space jump  M super jump. Hit the dummy.
+R2|Beam Hall|36|2|85|21||Troopers wind up before they lunge. The fence above only lets a dash through.
+R3|Shaft|88|2|107|49||Run up the red walls. Blue panels are not magnetic: jump to the other wall. At the top, hold toward the ledge.
+R4|Camp|110|40|139|53||Talk to John. O: tap to swap, hold to call an assist. John: Shift = 8-way air dash.
+R5|Warden Arena|142|40|173|57|arena|The Warden: sweep, leap slam (armoured), summon. Dash through the slam for a just dodge.
+R6|Ledge Cache|36|24|60|35||Past the fence. Pogo the drone, then claim the Mag Coil.
+R7|Return Corridor|20|60|173|67||Ceiling-run over the spikes, or pogo off them.
+R8|Shortcut|8|20|15|65||Drop down. The hatch only opens from this side.

@@ -27,13 +27,13 @@ public class PauseMenu : MonoBehaviour
         if (paused)
         {
             pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            TimeController.Paused = true;
             unpaused = false;
         }
-        else if (!unpaused) 
+        else if (!unpaused)
         {
             pauseMenu.SetActive(false);
-            Time.timeScale = 1f;
+            TimeController.Paused = false;
             unpaused = true;
         }
 

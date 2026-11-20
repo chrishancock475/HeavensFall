@@ -38,7 +38,37 @@ public class PlayerMovement : MonoBehaviour
     private int currentDirection;
     bool timeReset;
 
-    
+    #region PROTOTYPE HOOKS (defaults keep the prologue behaviour unchanged)
+    [Header("Prototype hooks")]
+    [Tooltip("False = only the floor counts as a surface (John has no mag boots).")]
+    public bool magSwitchEnabled = true;
+    [Tooltip("True = Left Shift slows time here (prologue). The prototype party handles Shift itself.")]
+    public bool legacyTimeSlow = true;
+    [NonSerialized] public bool inputLocked;   // no run input (ground attacks)
+    [NonSerialized] public bool jumpLocked;    // jump presses ignored (attack recovery without a cancel)
+    private float suspendTimer;
+    private float suspendGravity;
+
+    public int Facing => currentDirection;
+    public Transform SpriteTransform => sprite.transform;
+    public bool IsSuspended => suspendTimer > 0f;
+    public bool GroundedNow => magSwitchEnabled ? isGrounded : (isGrounded && MagSwitch != 0);
+
+    /// <summary>Skip the run/jump physics for a while (dash, lunge, knockback). Velocity is left to the caller.</summary>
+    public void Suspend(float seconds, float gravityScale = 0f)
+    {
+        suspendTimer = Mathf.Max(suspendTimer, seconds);
+        suspendGravity = gravityScale;
+        body.gravityScale = gravityScale;
+    }
+
+    public void EndSuspend()
+    {
+        suspendTimer = 0f;
+    }
+    #endregion
+
+
     public int MagSwitch
     {
         get
@@ -47,6 +77,11 @@ public class PlayerMovement : MonoBehaviour
             if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .05f, jumpableGround))
             {
                 a += 1;
+            }
+            if (!magSwitchEnabled)
+            {
+                if (a != 0) surface = a;
+                return a;
             }
             if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .05f, jumpableGround))
             {
@@ -108,29 +143,34 @@ public class PlayerMovement : MonoBehaviour
         #region INPUT HANDLER
         _moveInput.x = Input.GetAxisRaw("Horizontal");
         _moveInput.y = Input.GetAxisRaw("Vertical"); // For wall running
+        if (inputLocked) _moveInput = Vector2.zero;
         #endregion
         jumpDelay -= Time.deltaTime;
         superJumpDelay -= Time.deltaTime;
         groundTime -= Time.deltaTime;
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !jumpLocked)
         {
             jumpDelay = jumpBuffer;
         }
-        else if (Input.GetButtonDown("SuperJump")  && GameManager.LEVEL > 1)
+        else if (Input.GetButtonDown("SuperJump")  && GameManager.LEVEL > 1 && !jumpLocked)
         {
             superJumpDelay = superJumpBuffer;
         }
 
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (legacyTimeSlow)
         {
-            Time.timeScale = .5f;
-            timeReset = false;
-        }
-        else if (!timeReset)
-        {
-            Time.timeScale = 1f;
-            timeReset = true;
+            // Goes through TimeController so the pause menu wins (holding Shift while paused used to un-pause).
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                TimeController.SetSlow(this, true);
+                timeReset = false;
+            }
+            else if (!timeReset)
+            {
+                TimeController.SetSlow(this, false);
+                timeReset = true;
+            }
         }
 
 
@@ -139,6 +179,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (suspendTimer > 0f)
+        {
+            suspendTimer -= Time.fixedDeltaTime;
+            body.gravityScale = suspendGravity;
+            return;
+        }
         Run();
     }
 
@@ -170,6 +216,9 @@ public class PlayerMovement : MonoBehaviour
         //}
 
         targetSpeedY = _moveInput.y * maxSpeed;
+
+        // Same as isGrounded unless mag-switch is off (then a steel wall does not hold you)
+        bool isGrounded = GroundedNow;
 
         //Disable Gravity
         if (MagSwitch != 0 || isGrounded) body.gravityScale = 0;

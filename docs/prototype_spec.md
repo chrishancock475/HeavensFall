@@ -139,3 +139,20 @@ controller rebinding.
 2. HP: one shared party pool.
 3. Spikes: deal damage only (section 5).
 4. Keys: the RPG doc layout (section 3).
+
+## 12. Build notes (2026-11-19, first implementation)
+How it is built:
+- Map: `tools/gen_proto_map.py` writes `Assets/Levels/Proto/proto_slice_map.txt` (ASCII, legend in the script)
+  and `proto_slice_rooms.txt`. Menu **Heaven's Fall > Build Prototype Slice** (`Assets/Editor/ProtoSliceBuilder.cs`)
+  turns them into `Assets/Levels/Proto/Proto_Slice.unity` and adds it to Build Settings. Re-run after editing the map.
+- Code: `Assets/Scripts/Prototype/`. Shared time control: `Assets/Scripts/TimeController.cs`.
+- Debug keys in the slice: F1 hitboxes, F2 John joins, F3 heal, F4 full gauge, F5 restart, Esc pause.
+
+Changes from the sections above (decided while building; owner may overrule):
+- The R2 -> R6 lock is an **energy fence** that only John's dash passes, not a plain gap. A gap can be
+  cleared with enough momentum, so it would not be a reliable lock.
+- The Warden is **never stunned** (all hits count for the combo and deal damage). Stunning a boss on
+  every hit would let a simple string lock it down.
+- Super jump (M) is on from the start of the slice (as in Level_2), not behind an unlock.
+- Time slow is still global (it slows Rayne too), the same as the prologue.
+- Spikes in the slice are half-height slivers that deal 1 damage with knockback.
